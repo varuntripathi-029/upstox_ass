@@ -1,0 +1,16 @@
+{
+ "status": "success",
+ "data": [
+  {
+   "instrument_key": "INF879O01027",
+   "folio": "3108290884",
+   "fund": "PARAG PARIKH FLEXI CAP FUND - DIRECT PLAN GROWTH",
+   "pnl": -168.77,
+   "quantity": 331.986,
+   "average_price": 90.37,
+   "last_price": 89.8569,
+   "last_price_date": "2026-09-18",
+   "pledged_quantity": 0
+  }
+ ]
+}

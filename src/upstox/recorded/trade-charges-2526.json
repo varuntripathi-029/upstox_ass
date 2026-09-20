@@ -1,0 +1,22 @@
+{
+ "status": "success",
+ "data": {
+  "charges_breakdown": {
+   "total": 169.07,
+   "brokerage": 40,
+   "taxes": {
+    "gst": 7.77,
+    "stt": 102.74,
+    "stamp_duty": 15.41
+   },
+   "charges": {
+    "transaction": 3.05,
+    "clearing": 0,
+    "ipft": null,
+    "others": 0,
+    "sebi_turnover": 0.1,
+    "demat_transaction": 0
+   }
+  }
+ }
+}

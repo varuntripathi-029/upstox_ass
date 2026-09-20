@@ -1,0 +1,32 @@
+{
+ "status": "success",
+ "data": [
+  {
+   "instrument_key": "INF879O01027",
+   "fund": "Parag Parikh Flexi Cap Fund Direct Growth",
+   "dividend_type": "Growth",
+   "status": "ACTIVE",
+   "created": "2026-04-01 00:00:00.0",
+   "frequency": "MONTHLY",
+   "instalments": 999,
+   "sip_id": "133321093",
+   "transaction_type": "BUY",
+   "next_instalment": "2026-10-05 00:00:00.0",
+   "instalment_amount": 5000,
+   "last_instalment": "2026-09-07 00:00:00.0",
+   "pending_instalments": 0,
+   "instalment_day": 5,
+   "trigger_price": 0,
+   "sip_type": "Auto",
+   "completed_instalments": 6
+  }
+ ],
+ "meta_data": {
+  "page": {
+   "page_number": 1,
+   "total_pages": 1,
+   "records": 10,
+   "total_records": 1
+  }
+ }
+}

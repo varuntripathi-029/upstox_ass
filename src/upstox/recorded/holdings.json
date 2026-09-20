@@ -1,0 +1,49 @@
+{
+ "status": "success",
+ "data": [
+  {
+   "isin": "INE040A01034",
+   "cnc_used_quantity": 0,
+   "collateral_type": "",
+   "company_name": "HDFC BANK LTD",
+   "haircut": 0,
+   "product": "D",
+   "quantity": 40,
+   "trading_symbol": "HDFCBANK",
+   "tradingsymbol": "HDFCBANK",
+   "last_price": 2745.96,
+   "close_price": 2740.1,
+   "pnl": 31438.4,
+   "day_change": 5.86,
+   "day_change_percentage": 0.21,
+   "instrument_token": "NSE_EQ|INE040A01034",
+   "average_price": 1960,
+   "collateral_quantity": 0,
+   "collateral_update_quantity": 0,
+   "t1_quantity": 0,
+   "exchange": "NSE"
+  },
+  {
+   "isin": "INF204KB14I2",
+   "cnc_used_quantity": 0,
+   "collateral_type": "",
+   "company_name": "NIP IND ETF NIFTY BEES",
+   "haircut": 0,
+   "product": "D",
+   "quantity": 90,
+   "trading_symbol": "NIFTYBEES",
+   "tradingsymbol": "NIFTYBEES",
+   "last_price": 299.31,
+   "close_price": 298.4,
+   "pnl": 2600.1,
+   "day_change": 0.91,
+   "day_change_percentage": 0.3,
+   "instrument_token": "NSE_EQ|INF204KB14I2",
+   "average_price": 270.42,
+   "collateral_quantity": 0,
+   "collateral_update_quantity": 0,
+   "t1_quantity": 0,
+   "exchange": "NSE"
+  }
+ ]
+}

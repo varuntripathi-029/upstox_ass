@@ -1,0 +1,35 @@
+{
+ "status": "success",
+ "data": [
+  {
+   "quantity": 20,
+   "isin": "INE467B01029",
+   "scrip_name": "TATA CONSULTANCY SERV LT",
+   "trade_type": "EQ",
+   "buy_date": "15-05-2024",
+   "buy_average": 3600,
+   "sell_date": "20-05-2026",
+   "sell_average": 4200,
+   "buy_amount": 72000,
+   "sell_amount": 84000
+  },
+  {
+   "quantity": 50,
+   "isin": "INE009A01021",
+   "scrip_name": "INFOSYS LIMITED",
+   "trade_type": "EQ",
+   "buy_date": "10-04-2026",
+   "buy_average": 1450,
+   "sell_date": "15-07-2026",
+   "sell_average": 1600,
+   "buy_amount": 72500,
+   "sell_amount": 80000
+  }
+ ],
+ "metadata": {
+  "page": {
+   "page_number": 1,
+   "page_size": 2
+  }
+ }
+}
