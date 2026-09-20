@@ -1,6 +1,6 @@
 import { oauthConfig, cookie, STATE_COOKIE, STATE_TTL_SECONDS } from '../_lib/session.js'
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const config = oauthConfig(request)
   if (!config) {
     return new Response('OAuth not configured on this deployment', { status: 501 })

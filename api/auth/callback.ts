@@ -1,6 +1,6 @@
 import { oauthConfig, readCookie, STATE_COOKIE, SESSION_COOKIE, clearCookie, cookie, sealSession, tokenExpiry, secondsUntil } from '../_lib/session.js'
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const url = new URL(request.url)
   const code = url.searchParams.get('code')
   const state = url.searchParams.get('state')

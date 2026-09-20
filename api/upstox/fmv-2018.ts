@@ -7,7 +7,7 @@ import { tokenFor, badRequest, CACHE_STATIC, json, notConfigured, upstoxGet, ups
 
 const FMV_DAY = '2018-01-31'
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const key = new URL(request.url).searchParams.get('instrument_key')
   if (!key) return badRequest('Pass ?instrument_key=NSE_EQ|ISIN.')
   const auth = await tokenFor(request)

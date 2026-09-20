@@ -1,7 +1,7 @@
 import { readSession } from './_lib/session.js'
 import { upstoxGet, json, badRequest } from './_lib/upstox.js'
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const session = await readSession(request)
   if (!session) {
     return badRequest('Not authenticated')

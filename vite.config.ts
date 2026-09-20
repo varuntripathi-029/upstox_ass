@@ -16,7 +16,7 @@ export default defineConfig(({ mode }) => {
     alias: { '@': path.resolve(import.meta.dirname, './src') },
   },
   test: {
-    include: ['src/**/*.test.ts'],
+    include: ['src/**/*.test.ts', 'api/**/*.test.ts'],
   },
   }
 })

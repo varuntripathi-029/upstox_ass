@@ -4,7 +4,7 @@
 import type { UpstoxBrokerageResponse } from '../../src/upstox/types.js'
 import { tokenFor, badRequest, CACHE_QUOTES, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox.js'
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const q = new URL(request.url).searchParams
   const instrument = q.get('instrument_token')
   const quantity = Number(q.get('quantity'))

@@ -1,6 +1,6 @@
 import { SESSION_COOKIE, clearCookie } from '../_lib/session.js'
 
-export default async function (): Promise<Response> {
+export async function GET(): Promise<Response> {
   const headers = new Headers()
   headers.set('Location', '/')
   headers.append('Set-Cookie', clearCookie(SESSION_COOKIE))

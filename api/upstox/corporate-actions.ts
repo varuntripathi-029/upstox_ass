@@ -7,7 +7,7 @@ import { tokenFor, badRequest, CACHE_STATIC, json, notConfigured, upstoxGet, ups
 type Action = UpstoxCorporateActionsResponse['data'][number]
 const detail = (a: Action, name: string) => a.event_details?.find((d) => d.name.toLowerCase().includes(name))?.value ?? null
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const isin = new URL(request.url).searchParams.get('isin')
   if (!isin || !/^IN[EF][0-9A-Z]{9}$/.test(isin)) return badRequest('Pass ?isin=INE002A01018.')
   const auth = await tokenFor(request)

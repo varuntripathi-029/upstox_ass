@@ -4,7 +4,7 @@
 import type { UpstoxLtpResponse } from '../../src/upstox/types.js'
 import { tokenFor, badRequest, CACHE_QUOTES, json, listParam, notConfigured, upstoxGet, upstream } from '../_lib/upstox.js'
 
-export default async function (request: Request): Promise<Response> {
+export async function GET(request: Request): Promise<Response> {
   const keys = listParam(new URL(request.url), 'instrument_key', 50)
   if (!keys.length) return badRequest('Pass ?instrument_key=NSE_EQ|ISIN,... (up to 50).')
   const auth = await tokenFor(request)
