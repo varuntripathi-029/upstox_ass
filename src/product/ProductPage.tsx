@@ -8,8 +8,10 @@ function ProductNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-4 px-4 py-2.5">
-        <a href="/" className="text-sm font-semibold text-upstox-black">
-          Tax &amp; Cost Insights
+        <a href="/" className="flex flex-col leading-tight">
+          <span className="text-sm font-semibold text-upstox-black">Tax &amp; Cost Insights</span>
+          {/* One low-emphasis line, kept on a single row so the header height does not grow. */}
+          <span className="text-xs whitespace-nowrap text-muted">Know what you keep, before you sell.</span>
         </a>
         <a href="/case-study" className="text-sm text-muted hover:text-upstox-purple">
           Case study

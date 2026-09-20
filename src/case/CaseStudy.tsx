@@ -272,85 +272,33 @@ function Problem() {
 }
 
 function HowItWorks() {
-  // What actually runs: verified against the Upstox docs, Sep 2026 (see TECH.md §3).
-  const live = [
-    ['Current NAV + fund type (scheme_type)', 'MF instrument file (public .json.gz)'],
-    ['instrument_key, ISIN, tick size', 'NSE instrument file (public .json.gz)'],
+  // Three steps in plain words. What is live, recorded or sample is one line underneath; the endpoint
+  // list lives in TECH.md §3, not on this page.
+  const steps: [string, string][] = [
+    ['Upstox data', 'Your holdings, trades, charges and current prices, read from Upstox. Read-only: it can never place an order.'],
+    ['Tax engine', 'Rebuilds every purchase lot and applies this year’s tax rules — holding period, the ₹1.25L limit, charges, cess.'],
+    ['Decision on screen', 'One line per holding: what selling today would cost, when it turns long-term, and what you actually keep.'],
   ]
-  const token = [
-    ['Current prices', 'GET /v3/market-quote/ltp'],
-    ['Cost to sell and buy back', 'GET /v2/charges/brokerage'],
-    ['31-Jan-2018 price (grandfathering)', 'GET /v3/historical-candle/{key}/days/1/…'],
-    ['Splits, bonuses, dividends', 'GET /v2/fundamentals/{isin}/corporate-actions'],
-  ]
-  const recorded = [
-    ['Holdings', 'GET /v2/portfolio/long-term-holdings'],
-    ['Trade history incl. MF (3 FYs)', 'GET /v2/charges/historical-trades'],
-    ['Charges per segment + year', 'GET /v2/trade/profit-loss/charges'],
-    ['Realized P&L, trade by trade', 'GET /v2/trade/profit-loss/data'],
-    ['MF holdings and SIPs', 'GET /v2/mf/holdings, /v2/mf/sips'],
-  ]
-  const box = 'rounded-2xl border border-border bg-surface p-5 shadow-card'
-  const apiList = (rows: string[][]) => (
-    <ul className="mt-3 flex flex-col gap-1.5 text-sm">
-      {rows.map(([what, api]) => (
-        <li key={what} className="flex flex-col">
-          <span className="text-upstox-black">{what}</span>
-          <code className="text-xs break-all text-muted">{api}</code>
-        </li>
-      ))}
-    </ul>
-  )
   return (
-    <Section id="how" eyebrow="How it works" title="Upstox APIs → a pure tax engine → insights">
-      <div className="grid items-stretch gap-4 lg:grid-cols-[1.3fr_auto_1fr_auto_1fr]">
-        <div className={box}>
-          <h3 className="font-semibold text-upstox-black">1 · Upstox data (read-only)</h3>
-          <p className="mt-2 text-xs font-semibold text-gain-ink">Live now, no token</p>
-          {apiList(live)}
-          <p className="mt-3 text-xs font-semibold text-upstox-purple">Live once you connect Upstox (or with an optional Analytics Token)</p>
-          {apiList(token)}
-          <p className="mt-3 text-xs font-semibold text-charge-ink">Recorded responses (account APIs)</p>
-          {apiList(recorded)}
-          <p className="mt-3 rounded-xl border border-border bg-upstox-wash p-3 text-xs text-muted">
-            <b className="text-upstox-black">No token needed.</b> The default state is no credentials at all: NAVs and instrument data come from the two public
-            files, and the four market endpoints simply answer 501, so those numbers keep their last cached values with a small “Using cached values” tag. Nothing
-            breaks and nothing warns. <b className="text-upstox-black">Connect Upstox</b> signs you in with OAuth and the session token then covers those four as
-            well; an Analytics Token does the same server-side if you prefer no login. Either way the token stays in the serverless function.
-          </p>
-          <p className="mt-2 rounded-xl border border-warn-border bg-warn-bg p-3 text-xs text-warn-ink">
-            <b>Why the account APIs are recorded:</b> this is a personal Upstox app, so only the app owner can log in (other users need multi-client approval), and
-            that owner has no active demat account, so those five calls return nothing. They are recorded responses in the documented shapes, mapped by the same
-            code a live call uses. In production this would run inside Upstox on the logged-in session, and only the fetching would change.
-          </p>
-        </div>
-        <ArrowRight className="mx-auto hidden size-6 self-center text-upstox-purple lg:block" aria-hidden />
-        <ArrowRight className="mx-auto hidden size-6 self-center text-upstox-purple lg:block" aria-hidden />
-        <div className={`${box} border-upstox-purple`}>
-          <h3 className="font-semibold text-upstox-black">2 · Tax engine</h3>
-          <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-4 text-sm text-muted">
-            <li>Pure TypeScript, no network, deterministic</li>
-            <li>Money in integer paise, dates in Asia/Kolkata</li>
-            <li>Rebuilds FIFO lots, splits, bonuses, grandfathered cost</li>
-            <li>25 encoded rules (R1–R25), each with a worked-example test</li>
-            <li>One input shape: sample data, live data and recorded responses all map into it</li>
-          </ul>
-        </div>
-        <ArrowRight className="mx-auto hidden size-6 self-center text-upstox-purple lg:block" aria-hidden />
-        <div className={box}>
-          <h3 className="font-semibold text-upstox-black">3 · Insights</h3>
-          <ul className="mt-3 flex list-disc flex-col gap-1.5 pl-4 text-sm text-muted">
-            <li>Holdings chips: days to long-term, ₹ saved</li>
-            <li>You actually keep, tax by bucket, limit meter</li>
-            <li>Charges as % of gains, cost by order size</li>
-            <li>Strategy panels that compare options</li>
-            <li>Filing pointer: ITR form, deadline, advance tax</li>
-          </ul>
-        </div>
-      </div>
-      <p className="mt-5 max-w-3xl text-sm text-muted">
-        Sample mode (this page) runs the engine in the browser on bundled data, with no backend. Live mode sends the same input shape from a
-        serverless function after an Upstox login. It never places orders.
+    <Section id="how" eyebrow="How it works" title="Upstox data → tax engine → a decision on screen">
+      <ol className="grid gap-3 sm:grid-cols-3">
+        {steps.map(([title, text], i) => (
+          <li key={title} className="relative rounded-2xl border border-border bg-surface p-5 shadow-card">
+            <div className="flex items-center gap-2">
+              <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-upstox-purple text-xs font-bold text-white">{i + 1}</span>
+              <h3 className="font-semibold text-upstox-black">{title}</h3>
+            </div>
+            <p className="mt-2 text-sm text-muted">{text}</p>
+            {i < steps.length - 1 && (
+              <ArrowRight className="absolute top-1/2 -right-3 hidden size-5 -translate-y-1/2 text-upstox-purple sm:block" aria-hidden />
+            )}
+          </li>
+        ))}
+      </ol>
+      <p className="mt-4 max-w-3xl text-sm text-muted">
+        <b className="text-upstox-black">Live from Upstox now:</b> fund NAVs and instrument data.{' '}
+        <b className="text-upstox-black">Recorded:</b> the account APIs (holdings, trades, charges, P&amp;L), because a personal app only lets its owner log in and
+        that owner has no active demat account. <b className="text-upstox-black">Sample:</b> the persona trades you are clicking through.
       </p>
     </Section>
   )

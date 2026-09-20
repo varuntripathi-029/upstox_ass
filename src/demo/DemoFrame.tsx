@@ -112,20 +112,26 @@ function Ticker() {
 function TopNav() {
   const { report, view, setView, persona } = useDemo()
   const holdPnl = report.holdings.reduce((a, h) => a + h.unrealized, 0)
+  // Working controls carry a box; the rest of the Upstox chrome is plain, lower-emphasis text, so it
+  // is obvious at a glance what can be clicked in the demo and what is just there for context.
   const item = (label: string, target?: View) => {
     const active = target && (view === target || (target === 'funds' && view === 'insights'))
     return target ? (
       <button
         key={label}
         type="button"
+        data-live="true"
         onClick={() => setView(target)}
         aria-current={active ? 'page' : undefined}
-        className={cn('cursor-pointer border-b-2 px-1 py-3 text-sm whitespace-nowrap', active ? 'border-uw-purple font-medium text-uw-purple' : 'border-transparent text-uw-nav hover:text-uw-text')}
+        className={cn(
+          'my-2 cursor-pointer rounded-md border px-2.5 py-1 text-sm whitespace-nowrap',
+          active ? 'border-uw-purple bg-uw-banner font-medium text-uw-purple' : 'border-uw-band text-uw-text hover:border-uw-purple/50 hover:text-uw-purple',
+        )}
       >
         {label}
       </button>
     ) : (
-      <span key={label} className="hidden px-1 py-3 text-sm whitespace-nowrap text-uw-nav xl:inline" aria-hidden>
+      <span key={label} className="hidden px-1 py-3 text-sm whitespace-nowrap text-uw-nav/70 xl:inline" aria-hidden>
         {label}
       </span>
     )
@@ -157,11 +163,14 @@ function TopNav() {
         </span>
         <button
           type="button"
+          data-live="true"
           onClick={() => setView('funds')}
           aria-current={view === 'funds' || view === 'insights' ? 'page' : undefined}
           className={cn(
-            'cursor-pointer rounded-md border px-2.5 py-1 text-sm',
-            view === 'funds' || view === 'insights' ? 'border-uw-purple bg-uw-banner font-medium text-uw-purple' : 'border-uw-band text-uw-text',
+            'my-2 cursor-pointer rounded-md border px-2.5 py-1 text-sm whitespace-nowrap',
+            view === 'funds' || view === 'insights'
+              ? 'border-uw-purple bg-uw-banner font-medium text-uw-purple'
+              : 'border-uw-band text-uw-text hover:border-uw-purple/50 hover:text-uw-purple',
           )}
         >
           Funds
