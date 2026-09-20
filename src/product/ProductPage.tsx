@@ -7,14 +7,17 @@ import { DemoFrame } from '@/demo/DemoFrame'
 function ProductNav() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-4 px-4 py-2.5">
-        <a href="/" className="flex flex-col leading-tight">
-          <span className="text-sm font-semibold text-upstox-black">Tax &amp; Cost Insights</span>
-          {/* One low-emphasis line, kept on a single row so the header height does not grow. */}
-          <span className="text-xs whitespace-nowrap text-muted">Know what you keep, before you sell.</span>
+      <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-4 px-4 py-4 sm:px-6">
+        <a href="/" className="flex flex-col gap-0.5 leading-tight">
+          <span className="text-lg font-bold tracking-[-0.02em] text-upstox-black sm:text-xl">Tax &amp; Cost Insights</span>
+          {/* Wraps on a phone, one line from sm up, so the header never forces sideways scroll. */}
+          <span className="text-sm text-muted sm:whitespace-nowrap">Know what you keep, before you sell.</span>
         </a>
-        <a href="/case-study" className="text-sm text-muted hover:text-upstox-purple">
-          Case study
+        <a
+          href="/case-study"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-upstox-purple px-3 py-1.5 text-xs font-semibold text-white shadow-card hover:bg-upstox-purple-dark sm:px-4 sm:py-2 sm:text-sm"
+        >
+          Case study <ArrowRight className="size-4" />
         </a>
       </div>
     </header>
