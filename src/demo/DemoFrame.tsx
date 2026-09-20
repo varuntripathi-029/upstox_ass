@@ -24,12 +24,13 @@ function DemoControls() {
   const [editing, setEditing] = useState(false)
   const range = todayRange(persona)
   return (
-    <div className="mb-3 flex flex-col gap-3 rounded-2xl border border-border bg-upstox-wash p-3 sm:p-4">
-      <div className="flex flex-wrap items-end gap-3">
-        <label className="flex min-w-[12rem] flex-col gap-1 text-xs font-medium text-muted">
-          Viewing as
+    <section aria-label="Demo controls" className="mb-3 rounded-xl border border-border bg-upstox-wash/70 px-3 py-2">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-muted">
+        <span className="font-medium tracking-wide text-muted uppercase">Demo controls</span>
+        <label className="flex items-center gap-1.5">
+          <span className="sr-only sm:not-sr-only">Viewing as</span>
           <Select value={persona.id} onValueChange={(v) => setPersona(v as typeof persona.id)} disabled={account}>
-            <SelectTrigger className="w-full bg-white text-upstox-black" aria-label="Viewing as">
+            <SelectTrigger size="sm" className="h-7 min-w-[11rem] bg-white text-xs text-upstox-black" aria-label="Viewing as">
               {account ? <span>Demo account · recorded responses</span> : <SelectValue />}
             </SelectTrigger>
             <SelectContent>
@@ -41,10 +42,11 @@ function DemoControls() {
             </SelectContent>
           </Select>
         </label>
-        <label className="flex flex-col gap-1 text-xs font-medium text-muted">
-          Today’s date
+        <label className="flex items-center gap-1.5">
+          <span className="sr-only sm:not-sr-only">Today</span>
           <input
             type="date"
+            aria-label="Today’s date"
             disabled={account}
             min={range.min}
             max={range.max}
@@ -53,41 +55,39 @@ function DemoControls() {
               const v = e.target.value
               if (v && v >= range.min && v <= range.max) setToday(v)
             }}
-            className="h-9 rounded-md border border-input bg-white px-2.5 text-sm text-upstox-black"
+            className="h-7 rounded-md border border-input bg-white px-2 text-xs text-upstox-black"
           />
         </label>
-        <div className="flex flex-wrap gap-2">
-          <Button variant="outline" className="bg-white" disabled={account} onClick={() => setEditing(true)}>
-            <PencilLine className="size-4" /> Edit trades{edited && ' •'}
-          </Button>
-          <Button
-            variant="ghost"
-            onClick={() => {
-              resetDemo()
-              toast.success('Demo reset: default persona, original trades and date.')
-            }}
-          >
-            <RotateCcw className="size-4" /> Reset demo
-          </Button>
-        </div>
+        <DataSourceSwitch />
+        <Button variant="outline" className="h-7 bg-white px-2 text-xs" disabled={account} onClick={() => setEditing(true)}>
+          <PencilLine className="size-3.5" /> Edit trades{edited && ' •'}
+        </Button>
+        <Button
+          variant="ghost"
+          className="h-7 px-2 text-xs"
+          onClick={() => {
+            resetDemo()
+            toast.success('Demo reset: default persona, original trades and date.')
+          }}
+        >
+          <RotateCcw className="size-3.5" /> Reset demo
+        </Button>
       </div>
-      <DataSourceSwitch />
-      <p className="text-sm text-upstox-black">
+      <p className="mt-1.5 text-xs text-muted">
         {account ? (
           <>
-            <b>Demo account:</b> recorded Upstox responses (holdings, trade history incl. MF, charges, P&amp;L) mapped by the same code a live call uses. There is no
-            login: personal Upstox apps only allow the owner’s account.
+            <b className="font-medium text-upstox-black">Demo account:</b> recorded Upstox responses mapped by the same code a live call uses. There is no login:
+            personal Upstox apps only allow the owner’s account. {report.holdings.length} holdings · {report.mf.funds.length} funds · as of {formatDay(report.asOf)}.
           </>
         ) : (
           <>
-            <b>{persona.name}:</b> {persona.story}
+            <b className="font-medium text-upstox-black">{persona.name}:</b> {persona.story}
+            {state.today !== range.min && <span> Date moved to {formatDay(state.today)}; prices stay at the {formatDay(range.min)} snapshot.</span>}
           </>
         )}
-        {!account && state.today !== range.min && <span className="text-muted"> Date moved to {formatDay(state.today)}; prices stay at the {formatDay(range.min)} snapshot.</span>}
-        {account && <span className="text-muted"> {report.holdings.length} holdings · {report.mf.funds.length} funds · as of {formatDay(report.asOf)}.</span>}
       </p>
       <TradeEditor open={editing} onOpenChange={setEditing} />
-    </div>
+    </section>
   )
 }
 

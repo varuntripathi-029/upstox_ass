@@ -1,10 +1,10 @@
-// The case-study page (PRODUCT.md §5): nav, hero, what exists vs new, demo, how it works,
-// assumptions & limits, roadmap & success metrics, sources. Case-study palette (TECH.md §8.2).
+// The case study at "/case-study" (PRODUCT.md §5): hero, the problem, what exists vs what's new,
+// how it works, assumptions & limits, roadmap & success metrics, sources. The interactive product
+// frame is NOT here: it is the page at "/". Case-study palette (TECH.md §8.2).
 import { useMemo, type ReactNode } from 'react'
-import { ArrowDown, ArrowRight, Check, HelpCircle, X } from 'lucide-react'
+import { ArrowLeft, ArrowRight, Check, HelpCircle, X } from 'lucide-react'
 import { analyze, formatDay, POSITIONING, RULES_AS_OF, UPSTOX_TLH_URL } from '@/engine'
 import { R2_LTCG_EXEMPTION, R11_REBATE_INCOME_LIMIT } from '@/engine/rules'
-import { DemoFrame } from '@/demo/DemoFrame'
 import { buildInput, initialState } from '@/demo/scenario'
 import { inr } from '@/demo/ui'
 import { DEFAULT_PERSONA_ID } from '@/sample/personas'
@@ -29,15 +29,14 @@ function Section({ id, eyebrow, title, children, className }: { id?: string; eye
 function Nav() {
   const links = [
     ['Problem', '#problem'],
-    ['Demo', '#demo'],
     ['How it works', '#how'],
     ['Roadmap', '#roadmap'],
   ]
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-1 px-4 py-3">
-        <a href="#top" className="text-sm font-semibold text-upstox-black">
-          Tax &amp; Cost Insights <span className="font-normal text-muted">· a concept for Upstox</span>
+        <a href="/" className="flex items-center gap-1.5 text-sm font-semibold text-upstox-black hover:text-upstox-purple">
+          <ArrowLeft className="size-4" /> Back to the product
         </a>
         <nav aria-label="Page sections" className="flex gap-4 text-sm text-muted">
           {links.map(([label, href]) => (
@@ -79,10 +78,10 @@ function Hero() {
         <p className="mt-3 max-w-2xl text-base font-medium text-upstox-purple-dark">{POSITIONING}</p>
         <div className="mt-7 flex flex-wrap items-center gap-3">
           <a
-            href="#demo"
+            href="/"
             className="inline-flex items-center gap-2 rounded-lg bg-upstox-purple px-5 py-3 text-sm font-semibold text-white shadow-card hover:bg-upstox-purple-dark"
           >
-            See the demo <ArrowDown className="size-4" />
+            Try the product <ArrowRight className="size-4" />
           </a>
           <span className="text-xs text-muted">Sample persona, FY {r.fy.label}, as of {formatDay(r.asOf)}. No login needed.</span>
         </div>
@@ -262,18 +261,6 @@ function Problem() {
         Mutual funds, said plainly: MF-only tools are catching up. Kuvera shows MF units you can redeem within the ₹1.25L limit, and Groww shows MF tax at
         redemption. What’s new here is the combined stocks + MF view of the one ₹1.25L limit, and the ELSS unlock tracker.
       </p>
-    </Section>
-  )
-}
-
-function Demo() {
-  return (
-    <Section id="demo" eyebrow="Live demo" title="Try it: pick a persona, click any chip, chart or row." className="bg-[#FBFAFD]">
-      <p className="-mt-4 mb-6 max-w-3xl text-muted">
-        The frame below imitates Upstox web so the feature sits where users already look: chips on the Holdings page, and a new card in Funds → Reports.
-        Every number is computed live by the tax engine from raw sample trades. Move the date, change the settings or add a trade, and everything recalculates.
-      </p>
-      <DemoFrame />
     </Section>
   )
 }
@@ -506,17 +493,27 @@ function Sources() {
 export function CaseStudy() {
   return (
     <>
-      <a href="#demo" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">
-        Skip to demo
+      <a href="#problem" className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded focus:bg-white focus:px-3 focus:py-2">
+        Skip to content
       </a>
       <Nav />
       <main>
         <Hero />
         <Problem />
-        <Demo />
         <HowItWorks />
         <Assumptions />
         <Roadmap />
+        <section className="border-t border-border bg-white px-4 py-12 text-center">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 rounded-lg bg-upstox-purple px-5 py-3 text-sm font-semibold text-white shadow-card hover:bg-upstox-purple-dark"
+          >
+            Try the product <ArrowRight className="size-4" />
+          </a>
+          <p className="mx-auto mt-3 max-w-2xl text-sm text-muted">
+            The working demo: six personas, live recalculation, and every number from the tax engine.
+          </p>
+        </section>
       </main>
       <Sources />
     </>

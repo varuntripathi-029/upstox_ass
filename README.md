@@ -46,7 +46,7 @@ Inside Upstox web, not as a separate app: chips on the **Holdings** rows, and a 
 
 ## The demo
 
-`/` is the case-study page with an Upstox-web-style frame around a live engine: every number is computed from raw trades by a pure TypeScript tax engine, not hard-coded. `/debug` shows the engine's output as plain tables.
+`/` **is the product**: the Upstox-web-style frame is the whole page, with one slim Demo controls bar above it (persona, date, data source, edit trades, reset) because there is no login. Every number is computed from raw trades by a pure TypeScript tax engine, not hard-coded. `/case-study` has the write-up (problem, what exists, what is new, how it works, roadmap, sources) and `/debug` shows the engine as plain tables.
 
 Six seed personas, each proving a different rule:
 
@@ -141,7 +141,8 @@ On Vercel: Settings → Environment Variables → add `UPSTOX_ANALYTICS_TOKEN` �
 | `src/upstox/` | The Upstox layer: response types, gz filters, mapping into the engine, recorded responses, browser client. |
 | `api/upstox/` | Six serverless GET routes (two public, four token-gated). |
 | `src/demo/` | The Upstox-style frame, views, strategy panels, sell simulator, date control, trade editor, data-source switch. |
-| `src/case/` | The case-study page around the demo. |
+| `src/product/` | The product page at `/`: nav, the frame, the case-study call to action. |
+| `src/case/` | The case study at `/case-study`. |
 | `scripts/` | Data generation: NAV cache, persona build, recorded responses. |
 
 ---
