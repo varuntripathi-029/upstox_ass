@@ -2,8 +2,8 @@
 // UI offers "reconnect" instead of an error, and an account with no holdings is an empty result, not
 // a failure. No network: fetch is stubbed.
 import { afterEach, describe, expect, test, vi } from 'vitest'
-import { GET } from './portfolio.js'
-import * as session from './_lib/session.js'
+import { GET } from '../portfolio.js'
+import * as session from '../_lib/session.js'
 
 const SESSION = { accessToken: 'live_token', userName: 'Test User', userId: 'UCC1', expiresAt: new Date(Date.now() + 3_600_000).toISOString() }
 const req = () => new Request('http://localhost/api/portfolio')

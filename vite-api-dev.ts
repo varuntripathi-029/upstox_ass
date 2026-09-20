@@ -26,9 +26,14 @@ export function apiDev(): Plugin {
       server.middlewares.use(async (req, res, next) => {
         const url = new URL(req.url ?? '/', 'http://localhost')
         const match = url.pathname.match(/^\/api\/([\w-]+(?:\/[\w-]+)?)$/)
-        if (!match || !routes.has(match[1])) return next()
+        if (!match) return next()
+        // Exact file first, then the folder's [param] file, the way Vercel resolves dynamic routes.
+        const parts = match[1].split('/')
+        const dynamic = parts.length > 1 ? `${parts.slice(0, -1).join('/')}/${[...routes].map((r) => r.split('/').pop()).find((f) => f?.startsWith('[')) ?? ''}` : ''
+        const route = routes.has(match[1]) ? match[1] : routes.has(dynamic) ? dynamic : null
+        if (!route) return next()
         try {
-          const mod = (await server.ssrLoadModule(`/api/${match[1]}.ts`)) as { GET: (r: Request) => Promise<Response> | Response }
+          const mod = (await server.ssrLoadModule(`/api/${route}.ts`)) as { GET: (r: Request) => Promise<Response> | Response }
           const headers = Object.fromEntries(
             Object.entries(req.headers).map(([k, v]) => [k, Array.isArray(v) ? v.join(',') : String(v ?? '')]),
           )
