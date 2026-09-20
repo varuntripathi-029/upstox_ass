@@ -68,7 +68,7 @@ function Hero() {
           {soon && (
             <>
               {' '}
-              And {soon.symbol} turns long-term in <span className="tabular text-upstox-purple">{soon.days} days</span>.
+              And your {soon.symbol} holding turns long-term in <span className="tabular text-upstox-purple">{soon.days} days</span>.
             </>
           )}
         </h1>
