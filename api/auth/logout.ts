@@ -1,4 +1,4 @@
-import { SESSION_COOKIE, clearCookie } from '../_lib/session'
+import { SESSION_COOKIE, clearCookie } from '../_lib/session.js'
 
 export default async function (): Promise<Response> {
   const headers = new Headers()

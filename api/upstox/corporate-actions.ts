@@ -1,8 +1,8 @@
 // GET /api/upstox/corporate-actions?isin=INE002A01018
 // Corporate Actions (GET /v2/fundamentals/{isin}/corporate-actions): splits, bonuses and dividends.
 // Fundamentals needs no static IP with an Analytics Token.
-import type { UpstoxCorporateActionsResponse } from '../../src/upstox/types'
-import { tokenFor, badRequest, CACHE_STATIC, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox'
+import type { UpstoxCorporateActionsResponse } from '../../src/upstox/types.js'
+import { tokenFor, badRequest, CACHE_STATIC, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox.js'
 
 type Action = UpstoxCorporateActionsResponse['data'][number]
 const detail = (a: Action, name: string) => a.event_details?.find((d) => d.name.toLowerCase().includes(name))?.value ?? null

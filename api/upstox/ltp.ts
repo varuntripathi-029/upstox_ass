@@ -1,8 +1,8 @@
 // GET /api/upstox/ltp?instrument_key=NSE_EQ|INE009A01021,NSE_EQ|INE040A01034
 // LTP Quotes V3 (GET /v3/market-quote/ltp). Market Quote needs no static IP with an Analytics Token.
 // Without a token this returns 501 and the UI keeps its cached prices.
-import type { UpstoxLtpResponse } from '../../src/upstox/types'
-import { tokenFor, badRequest, CACHE_QUOTES, json, listParam, notConfigured, upstoxGet, upstream } from '../_lib/upstox'
+import type { UpstoxLtpResponse } from '../../src/upstox/types.js'
+import { tokenFor, badRequest, CACHE_QUOTES, json, listParam, notConfigured, upstoxGet, upstream } from '../_lib/upstox.js'
 
 export default async function (request: Request): Promise<Response> {
   const keys = listParam(new URL(request.url), 'instrument_key', 50)

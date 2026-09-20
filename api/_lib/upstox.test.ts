@@ -1,6 +1,6 @@
 import { expect, test, vi, describe, afterEach } from 'vitest'
-import { tokenFor } from './upstox'
-import * as session from './session'
+import { tokenFor } from './upstox.js'
+import * as session from './session.js'
 
 describe('tokenFor priority logic', () => {
   afterEach(() => {

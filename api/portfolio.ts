@@ -1,5 +1,5 @@
-import { readSession } from './_lib/session'
-import { upstoxGet, json, badRequest } from './_lib/upstox'
+import { readSession } from './_lib/session.js'
+import { upstoxGet, json, badRequest } from './_lib/upstox.js'
 
 export default async function (request: Request): Promise<Response> {
   const session = await readSession(request)

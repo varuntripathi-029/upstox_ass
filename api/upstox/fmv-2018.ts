@@ -2,8 +2,8 @@
 // R22 grandfathering: the FMV is the HIGH of the 31-Jan-2018 daily candle.
 // Historical Candle V3: GET /v3/historical-candle/{instrument_key}/days/1/{to_date}/{from_date},
 // candles ordered [timestamp, open, high, low, close, volume, open interest]. Historical Data needs no static IP.
-import type { UpstoxCandleResponse } from '../../src/upstox/types'
-import { tokenFor, badRequest, CACHE_STATIC, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox'
+import type { UpstoxCandleResponse } from '../../src/upstox/types.js'
+import { tokenFor, badRequest, CACHE_STATIC, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox.js'
 
 const FMV_DAY = '2018-01-31'
 

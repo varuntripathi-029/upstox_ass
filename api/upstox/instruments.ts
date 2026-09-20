@@ -1,9 +1,9 @@
 // GET /api/upstox/instruments?isins=INE009A01021,INE040A01034
 // Public file, no token: NSE.json.gz filtered to the demo's instruments (instrument_key, ISIN,
 // trading symbol, name, tick size). Never sends the whole file (Vercel's response limit is 4.5 MB).
-import { pickInstruments } from '../../src/upstox/filter'
-import type { UpstoxNseInstrument } from '../../src/upstox/types'
-import { ASSETS, badRequest, CACHE_INSTRUMENTS, fetchJsonGz, json, listParam, upstream } from '../_lib/upstox'
+import { pickInstruments } from '../../src/upstox/filter.js'
+import type { UpstoxNseInstrument } from '../../src/upstox/types.js'
+import { ASSETS, badRequest, CACHE_INSTRUMENTS, fetchJsonGz, json, listParam, upstream } from '../_lib/upstox.js'
 
 export default async function (request: Request): Promise<Response> {
   const isins = listParam(new URL(request.url), 'isins', 50)

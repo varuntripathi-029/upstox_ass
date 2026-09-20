@@ -1,7 +1,7 @@
 // Server-side helpers for the Upstox calls (Vercel Node functions, TECH.md §4).
 // The Analytics Token never reaches the browser: it is read from the environment here only.
 import { gunzipSync } from 'node:zlib'
-import { readSession } from './session'
+import { readSession } from './session.js'
 
 export const UPSTOX_API = 'https://api.upstox.com'
 export const ASSETS = 'https://assets.upstox.com/market-quote/instruments/exchange'

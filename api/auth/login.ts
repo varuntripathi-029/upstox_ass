@@ -1,4 +1,4 @@
-import { oauthConfig, cookie, STATE_COOKIE, STATE_TTL_SECONDS } from '../_lib/session'
+import { oauthConfig, cookie, STATE_COOKIE, STATE_TTL_SECONDS } from '../_lib/session.js'
 
 export default async function (request: Request): Promise<Response> {
   const config = oauthConfig(request)

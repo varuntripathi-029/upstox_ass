@@ -1,4 +1,4 @@
-import { readSession, publicSession } from '../_lib/session'
+import { readSession, publicSession } from '../_lib/session.js'
 
 export default async function (request: Request): Promise<Response> {
   const session = await readSession(request)

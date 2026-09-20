@@ -1,8 +1,8 @@
 // GET /api/upstox/charges?instrument_token=NSE_EQ|INE040A01034&quantity=40&product=D&transaction_type=SELL&price=2745.96
 // Brokerage API (GET /v2/charges/brokerage): the real cost of selling and buying back, for the harvest panel.
 // Charges needs no static IP with an Analytics Token. Without a token: 501, and the UI estimates from the user's own orders.
-import type { UpstoxBrokerageResponse } from '../../src/upstox/types'
-import { tokenFor, badRequest, CACHE_QUOTES, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox'
+import type { UpstoxBrokerageResponse } from '../../src/upstox/types.js'
+import { tokenFor, badRequest, CACHE_QUOTES, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox.js'
 
 export default async function (request: Request): Promise<Response> {
   const q = new URL(request.url).searchParams

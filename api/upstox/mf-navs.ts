@@ -2,9 +2,9 @@
 // Public file, no token: downloads the Upstox MF instrument file, gunzips it server-side and returns
 // only the requested schemes (current NAV, scheme_type, name). Verified: the file lists the ISIN as
 // `instrument_key` and gives `last_price` (NAV) and `scheme_type` (EQUITY / ELSS / DEBT).
-import { pickMfNavs } from '../../src/upstox/filter'
-import type { UpstoxMfInstrument } from '../../src/upstox/types'
-import { ASSETS, badRequest, CACHE_NAVS, fetchJsonGz, json, listParam, upstream } from '../_lib/upstox'
+import { pickMfNavs } from '../../src/upstox/filter.js'
+import type { UpstoxMfInstrument } from '../../src/upstox/types.js'
+import { ASSETS, badRequest, CACHE_NAVS, fetchJsonGz, json, listParam, upstream } from '../_lib/upstox.js'
 
 export default async function (request: Request): Promise<Response> {
   const isins = listParam(new URL(request.url), 'isins', 25)
