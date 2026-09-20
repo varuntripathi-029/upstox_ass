@@ -120,30 +120,40 @@ function Ticker() {
 function TopNav() {
   const { report, view, setView, persona } = useDemo()
   const holdPnl = report.holdings.reduce((a, h) => a + h.unrealized, 0)
-  // Working controls carry a box; the rest of the Upstox chrome is plain, lower-emphasis text, so it
-  // is obvious at a glance what can be clicked in the demo and what is just there for context.
-  const item = (label: string, target?: View) => {
-    const active = target && (view === target || (target === 'funds' && view === 'insights'))
-    return target ? (
+  // The two real views are one segmented control: active filled, the other outlined, so the frame
+  // reads "two views, pick one". Everything else is Upstox chrome: dimmed, inert, not focusable.
+  const segment = (label: string, target: View) => {
+    const active = view === target || (target === 'funds' && view === 'insights')
+    return (
       <button
         key={label}
         type="button"
         data-live="true"
+        data-seg="true"
         onClick={() => setView(target)}
         aria-current={active ? 'page' : undefined}
         className={cn(
-          'my-2 cursor-pointer rounded-md border px-2.5 py-1 text-sm whitespace-nowrap',
-          active ? 'border-uw-purple bg-uw-banner font-medium text-uw-purple' : 'border-uw-band text-uw-text hover:border-uw-purple/50 hover:text-uw-purple',
+          'cursor-pointer rounded-md border px-2.5 py-1 text-sm whitespace-nowrap transition',
+          active ? 'border-uw-purple bg-uw-purple font-medium text-white' : 'border-uw-band bg-white text-uw-text hover:border-uw-purple/60 hover:text-uw-purple',
         )}
       >
         {label}
       </button>
-    ) : (
-      <span key={label} className="hidden px-1 py-3 text-sm whitespace-nowrap text-uw-nav/70 xl:inline" aria-hidden>
-        {label}
-      </span>
     )
   }
+
+  /** Chrome that is there for context only: dimmed, default cursor, no hover, not focusable. */
+  const placeholder = (label: string) => (
+    <span
+      key={label}
+      title="Not part of this demo"
+      data-placeholder="true"
+      aria-hidden
+      className="hidden cursor-default px-1 py-3 text-sm whitespace-nowrap text-uw-nav/55 select-none xl:inline"
+    >
+      {label}
+    </span>
+  )
   return (
     <div className="flex items-center justify-between gap-3 border-b border-uw-band bg-white px-3 sm:px-4">
       <div className="flex min-w-0 items-center gap-3">
@@ -160,33 +170,33 @@ function TopNav() {
         <Eye className="hidden size-3.5 text-uw-text-2 xl:block" aria-hidden />
       </div>
       <nav className="flex items-center gap-3" aria-label="Upstox demo navigation">
-        {item('Home')}
-        {item('My List')}
-        {item('Orders')}
-        {item('Positions')}
-        {item('Holdings', 'holdings')}
-        {item('More ▾')}
-        <span className="hidden h-8 w-28 items-center gap-1.5 rounded-md border border-uw-band px-2 text-xs text-uw-text-2 2xl:flex" aria-hidden>
+        {placeholder('Home')}
+        {placeholder('My List')}
+        {placeholder('Orders')}
+        {placeholder('Positions')}
+        {placeholder('More ▾')}
+        <span
+          className="hidden h-8 w-28 cursor-default items-center gap-1.5 rounded-md border border-uw-band px-2 text-xs text-uw-nav/55 2xl:flex"
+          title="Not part of this demo"
+          data-placeholder="true"
+          aria-hidden
+        >
           <Search className="size-3.5" /> Search
         </span>
-        <button
-          type="button"
-          data-live="true"
-          onClick={() => setView('funds')}
-          aria-current={view === 'funds' || view === 'insights' ? 'page' : undefined}
-          className={cn(
-            'my-2 cursor-pointer rounded-md border px-2.5 py-1 text-sm whitespace-nowrap',
-            view === 'funds' || view === 'insights'
-              ? 'border-uw-purple bg-uw-banner font-medium text-uw-purple'
-              : 'border-uw-band text-uw-text hover:border-uw-purple/50 hover:text-uw-purple',
-          )}
+        {/* The only interactive pair in the frame: two views, pick one. */}
+        <div role="group" aria-label="Views" data-segmented="true" className="my-1.5 flex items-center gap-1 rounded-lg bg-uw-band/50 p-0.5">
+          {segment('Holdings', 'holdings')}
+          {segment('Funds', 'funds')}
+        </div>
+        <span
+          className="hidden size-8 cursor-default items-center justify-center rounded-full bg-uw-banner text-xs font-semibold text-uw-purple/70 sm:flex"
+          title="Not part of this demo"
+          data-placeholder="true"
+          aria-hidden
         >
-          Funds
-        </button>
-        <span className="hidden size-8 items-center justify-center rounded-full bg-uw-banner text-xs font-semibold text-uw-purple sm:flex" aria-hidden>
           {persona.name.slice(0, 2).toUpperCase()}
         </span>
-        <Grip className="hidden size-4 text-uw-text-2 md:block" aria-hidden />
+        <Grip className="hidden size-4 cursor-default text-uw-nav/55 md:block" aria-hidden />
       </nav>
     </div>
   )
