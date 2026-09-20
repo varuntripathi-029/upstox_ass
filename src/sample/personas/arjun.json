@@ -1,0 +1,340 @@
+{
+ "id": "arjun",
+ "name": "Arjun",
+ "tagline": "Student · no other income",
+ "story": "Arjun has no other income, so his unused ₹4L basic exemption makes his ₹60,000 of short-term gains tax-free (R10). Waiting on TATAPOWER saves nothing: there is no tax either way.",
+ "settings": {
+  "regime": "new",
+  "otherIncomePaise": 0,
+  "otherIncomeIsSalary": false,
+  "otherBrokerLtcgPaise": 0
+ },
+ "portfolio": {
+  "source": "sample",
+  "asOf": "2026-09-18T18:00:00+05:30",
+  "tradeHistoryFrom": "2024-04-01",
+  "instruments": [
+   {
+    "symbol": "TATAPOWER",
+    "name": "Tata Power",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "BEL",
+    "name": "BEL",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "HAL",
+    "name": "HAL",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "IRCTC",
+    "name": "IRCTC",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TRENT",
+    "name": "TRENT",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "DIXON",
+    "name": "DIXON",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "POLYCAB",
+    "name": "POLYCAB",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "CDSL",
+    "name": "CDSL",
+    "assetClass": "STOCK"
+   }
+  ],
+  "corporateActions": [],
+  "holdings": [
+   {
+    "symbol": "TATAPOWER",
+    "qty": 200,
+    "avgPricePaise": 39000,
+    "ltpPaise": 43020
+   }
+  ],
+  "trades": [
+   {
+    "id": "arjun-001",
+    "symbol": "TATAPOWER",
+    "segment": "EQ",
+    "time": "2025-10-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 200,
+    "pricePaise": 39000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 7800,
+     "exchange": 419,
+     "sebi": 8,
+     "stamp": 1170,
+     "gst": 403,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-002",
+    "symbol": "BEL",
+    "segment": "EQ",
+    "time": "2026-04-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 140,
+    "pricePaise": 30000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4221,
+     "exchange": 125,
+     "sebi": 4,
+     "stamp": 630,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-004",
+    "symbol": "HAL",
+    "segment": "EQ",
+    "time": "2026-04-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 420000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4221,
+     "exchange": 125,
+     "sebi": 4,
+     "stamp": 630,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-003",
+    "symbol": "BEL",
+    "segment": "EQ",
+    "time": "2026-05-04T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 140,
+    "pricePaise": 36127,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5084,
+     "exchange": 62,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 721,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "arjun-006",
+    "symbol": "IRCTC",
+    "segment": "EQ",
+    "time": "2026-05-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 55,
+    "pricePaise": 76000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4201,
+     "exchange": 124,
+     "sebi": 4,
+     "stamp": 627,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-008",
+    "symbol": "TRENT",
+    "segment": "EQ",
+    "time": "2026-06-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 8,
+    "pricePaise": 520000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4181,
+     "exchange": 124,
+     "sebi": 4,
+     "stamp": 624,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-005",
+    "symbol": "HAL",
+    "segment": "EQ",
+    "time": "2026-06-01T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 10,
+    "pricePaise": 510787,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5134,
+     "exchange": 152,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 721,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "arjun-007",
+    "symbol": "IRCTC",
+    "segment": "EQ",
+    "time": "2026-06-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 55,
+    "pricePaise": 89779,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4963,
+     "exchange": 132,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 720,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "arjun-010",
+    "symbol": "DIXON",
+    "segment": "EQ",
+    "time": "2026-06-19T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 1400000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4221,
+     "exchange": 125,
+     "sebi": 4,
+     "stamp": 630,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-009",
+    "symbol": "TRENT",
+    "segment": "EQ",
+    "time": "2026-07-06T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 8,
+    "pricePaise": 645983,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5194,
+     "exchange": 153,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 721,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "arjun-012",
+    "symbol": "POLYCAB",
+    "segment": "EQ",
+    "time": "2026-07-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 600000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4221,
+     "exchange": 125,
+     "sebi": 4,
+     "stamp": 630,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-011",
+    "symbol": "DIXON",
+    "segment": "EQ",
+    "time": "2026-07-27T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 3,
+    "pricePaise": 1685956,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5084,
+     "exchange": 150,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 721,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "arjun-014",
+    "symbol": "CDSL",
+    "segment": "EQ",
+    "time": "2026-08-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 28,
+    "pricePaise": 150000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4221,
+     "exchange": 125,
+     "sebi": 4,
+     "stamp": 630,
+     "gst": 383,
+     "dp": 0
+    }
+   },
+   {
+    "id": "arjun-013",
+    "symbol": "POLYCAB",
+    "segment": "EQ",
+    "time": "2026-08-17T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 7,
+    "pricePaise": 736838,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5184,
+     "exchange": 148,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 721,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "arjun-015",
+    "symbol": "CDSL",
+    "segment": "EQ",
+    "time": "2026-09-07T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 28,
+    "pricePaise": 175280,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4937,
+     "exchange": 123,
+     "sebi": 5,
+     "stamp": 0,
+     "gst": 720,
+     "dp": 1850
+    }
+   }
+  ]
+ }
+}

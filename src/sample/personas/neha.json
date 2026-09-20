@@ -1,0 +1,1356 @@
+{
+ "id": "neha",
+ "name": "Neha",
+ "tagline": "SIP investor · ₹11L salary",
+ "story": "Your SIP isn't one investment; it's 66 investments with their own tax clocks. The rebate covers your debt-fund gains but not equity gains.",
+ "settings": {
+  "regime": "new",
+  "otherIncomePaise": 110000000,
+  "otherIncomeIsSalary": true,
+  "otherBrokerLtcgPaise": 0
+ },
+ "portfolio": {
+  "source": "sample",
+  "asOf": "2026-09-18T18:00:00+05:30",
+  "tradeHistoryFrom": "2023-04-01",
+  "instruments": [
+   {
+    "symbol": "PPFAS-FLEXI",
+    "name": "Parag Parikh Flexi Cap Fund Direct Growth",
+    "shortName": "Parag Parikh",
+    "isin": "INF879O01027",
+    "assetClass": "EQUITY_MF"
+   },
+   {
+    "symbol": "MIRAE-ELSS",
+    "name": "Mirae Asset ELSS Tax Saver Fund Direct Growth",
+    "shortName": "Mirae Asset ELSS",
+    "isin": "INF769K01DM9",
+    "assetClass": "EQUITY_MF",
+    "elss": true
+   },
+   {
+    "symbol": "HDFC-SHORT",
+    "name": "HDFC Short Term Fund Direct Growth",
+    "shortName": "HDFC Short Term",
+    "isin": "INF179K01YM7",
+    "assetClass": "DEBT_MF"
+   }
+  ],
+  "corporateActions": [],
+  "holdings": [
+   {
+    "symbol": "PPFAS-FLEXI",
+    "qty": 1040.062,
+    "avgPricePaise": 0,
+    "ltpPaise": 8985.69
+   },
+   {
+    "symbol": "MIRAE-ELSS",
+    "qty": 2099.284,
+    "avgPricePaise": 0,
+    "ltpPaise": 5675.3
+   },
+   {
+    "symbol": "HDFC-SHORT",
+    "qty": 3315.714,
+    "avgPricePaise": 0,
+    "ltpPaise": 3541.39
+   }
+  ],
+  "trades": [
+   {
+    "id": "neha-031",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2023-10-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 75.18,
+    "pricePaise": 3990.2,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-032",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2023-11-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 75.73,
+    "pricePaise": 3961.2,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-033",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2023-12-11T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 70.017,
+    "pricePaise": 4284.4,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-034",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-01-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 67.076,
+    "pricePaise": 4472.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-035",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-02-12T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 67.773,
+    "pricePaise": 4426.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-036",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-03-11T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 65.471,
+    "pricePaise": 4581.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-001",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-04-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 65.503,
+    "pricePaise": 7632.82,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-037",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-04-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 62.971,
+    "pricePaise": 4763.8,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-002",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-05-06T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 64.295,
+    "pricePaise": 7776.23,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-038",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-05-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 64.073,
+    "pricePaise": 4681.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-003",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-06-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 64.025,
+    "pricePaise": 7808.96,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-039",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-06-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 60.37,
+    "pricePaise": 4969.1,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-067",
+    "symbol": "HDFC-SHORT",
+    "segment": "MF",
+    "time": "2024-06-14T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 3315.714,
+    "pricePaise": 3015.79,
+    "amountPaise": 10000000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 500,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-004",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-07-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 59.577,
+    "pricePaise": 8392.05,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-040",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-07-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 57.118,
+    "pricePaise": 5252,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-005",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-08-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 60.788,
+    "pricePaise": 8224.79,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-041",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-08-12T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.751,
+    "pricePaise": 5285.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-006",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-09-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 57.98,
+    "pricePaise": 8623.23,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-042",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-09-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.682,
+    "pricePaise": 5485.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-007",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-10-07T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 58.152,
+    "pricePaise": 8597.61,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-043",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-10-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.093,
+    "pricePaise": 5445,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-008",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-11-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 57.882,
+    "pricePaise": 8637.81,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-044",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-11-11T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.763,
+    "pricePaise": 5284.8,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-009",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2024-12-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.568,
+    "pricePaise": 8838.4,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-045",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2024-12-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.545,
+    "pricePaise": 5499.7,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-010",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-01-06T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 57.24,
+    "pricePaise": 8734.65,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-046",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-01-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 58.904,
+    "pricePaise": 5092.7,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-011",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-02-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.999,
+    "pricePaise": 8771.54,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-047",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-02-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 60.039,
+    "pricePaise": 4996.5,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-012",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-03-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 59.708,
+    "pricePaise": 8373.53,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-048",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-03-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 62.813,
+    "pricePaise": 4775.8,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-013",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-04-07T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 60.928,
+    "pricePaise": 8205.94,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-049",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-04-11T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 61.759,
+    "pricePaise": 4857.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-014",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-05-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.775,
+    "pricePaise": 8806.15,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-050",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-05-12T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.603,
+    "pricePaise": 5299.8,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-015",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-06-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.416,
+    "pricePaise": 9022.15,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-051",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-06-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.395,
+    "pricePaise": 5514.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-016",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-07-07T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.961,
+    "pricePaise": 9265.36,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-052",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-07-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.742,
+    "pricePaise": 5581.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-017",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-08-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.634,
+    "pricePaise": 9151.26,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-053",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-08-11T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.235,
+    "pricePaise": 5431,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-018",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-09-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.043,
+    "pricePaise": 9251.3,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-054",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-09-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.051,
+    "pricePaise": 5550,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-019",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-10-06T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.756,
+    "pricePaise": 9300.72,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-055",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-10-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.089,
+    "pricePaise": 5650.6,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-020",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-11-06T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.314,
+    "pricePaise": 9377.9,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-056",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-11-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 52.343,
+    "pricePaise": 5731.1,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-021",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2025-12-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 52.423,
+    "pricePaise": 9537.18,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-057",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2025-12-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 52.564,
+    "pricePaise": 5707,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-022",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-01-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 52.45,
+    "pricePaise": 9532.29,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-058",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-01-12T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 52.616,
+    "pricePaise": 5701.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-023",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-02-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.437,
+    "pricePaise": 9356.31,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-059",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-02-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 51.705,
+    "pricePaise": 5801.8,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-024",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-03-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.588,
+    "pricePaise": 9158.97,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-060",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-03-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.522,
+    "pricePaise": 5402.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-025",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-04-06T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 57.146,
+    "pricePaise": 8749.05,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-061",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-04-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.287,
+    "pricePaise": 5425.9,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-026",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-05-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.847,
+    "pricePaise": 9115.7,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-062",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-05-11T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.44,
+    "pricePaise": 5510.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-027",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-06-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 56.083,
+    "pricePaise": 8914.88,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-063",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-06-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.091,
+    "pricePaise": 5445.2,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-068",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-06-15T15:00:00+05:30",
+    "side": "SELL",
+    "qty": 666.348,
+    "pricePaise": 9004.3,
+    "amountPaise": 5999997,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-028",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-07-06T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 54.696,
+    "pricePaise": 9140.93,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-064",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-07-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 51.683,
+    "pricePaise": 5804.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-029",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-08-05T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 53.857,
+    "pricePaise": 9283.29,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-065",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-08-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 51.171,
+    "pricePaise": 5862.3,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-030",
+    "symbol": "PPFAS-FLEXI",
+    "segment": "MF",
+    "time": "2026-09-07T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 55.339,
+    "pricePaise": 9034.73,
+    "amountPaise": 500000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 25,
+     "gst": 0,
+     "dp": 0
+    }
+   },
+   {
+    "id": "neha-066",
+    "symbol": "MIRAE-ELSS",
+    "segment": "MF",
+    "time": "2026-09-10T15:00:00+05:30",
+    "side": "BUY",
+    "qty": 52.619,
+    "pricePaise": 5701,
+    "amountPaise": 300000,
+    "charges": {
+     "brokerage": 0,
+     "stt": 0,
+     "exchange": 0,
+     "sebi": 0,
+     "stamp": 15,
+     "gst": 0,
+     "dp": 0
+    }
+   }
+  ]
+ }
+}

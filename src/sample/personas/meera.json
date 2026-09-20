@@ -1,0 +1,544 @@
+{
+ "id": "meera",
+ "name": "Meera",
+ "tagline": "Long-term investor · ₹18L salary",
+ "story": "Meera has booked ₹1,10,000 of long-term gains, so only ₹15,000 of her ₹1.25L tax-free limit is left, while her holdings carry large long-term gains.",
+ "settings": {
+  "regime": "new",
+  "otherIncomePaise": 180000000,
+  "otherIncomeIsSalary": true,
+  "otherBrokerLtcgPaise": 0
+ },
+ "portfolio": {
+  "source": "sample",
+  "asOf": "2026-09-18T18:00:00+05:30",
+  "tradeHistoryFrom": "2024-04-01",
+  "instruments": [
+   {
+    "symbol": "INFY",
+    "name": "Infosys",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "ITC",
+    "name": "ITC",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TCS",
+    "name": "Tata Consultancy Services",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "LT",
+    "name": "Larsen & Toubro",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "ASIANPAINT",
+    "name": "Asian Paints",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "NIFTYBEES",
+    "name": "Nippon India ETF Nifty 50 BeES",
+    "assetClass": "EQUITY_ETF"
+   }
+  ],
+  "corporateActions": [],
+  "holdings": [
+   {
+    "symbol": "ASIANPAINT",
+    "qty": 100,
+    "avgPricePaise": 231000,
+    "ltpPaise": 471067
+   },
+   {
+    "symbol": "NIFTYBEES",
+    "qty": 1000,
+    "avgPricePaise": 21500,
+    "ltpPaise": 30007
+   }
+  ],
+  "trades": [
+   {
+    "id": "meera-001",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2024-05-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 15,
+    "pricePaise": 133000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1995,
+     "exchange": 59,
+     "sebi": 2,
+     "stamp": 299,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-025",
+    "symbol": "ASIANPAINT",
+    "segment": "EQ",
+    "time": "2024-05-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 100,
+    "pricePaise": 231000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 23100,
+     "exchange": 724,
+     "sebi": 23,
+     "stamp": 3465,
+     "gst": 488,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-005",
+    "symbol": "ITC",
+    "segment": "EQ",
+    "time": "2024-05-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 60,
+    "pricePaise": 33000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1980,
+     "exchange": 59,
+     "sebi": 2,
+     "stamp": 297,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-009",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2024-05-31T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 14,
+    "pricePaise": 139000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1946,
+     "exchange": 58,
+     "sebi": 2,
+     "stamp": 292,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-026",
+    "symbol": "NIFTYBEES",
+    "segment": "EQ",
+    "time": "2024-06-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 1000,
+    "pricePaise": 21500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 21500,
+     "exchange": 1274,
+     "sebi": 22,
+     "stamp": 3225,
+     "gst": 479,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-013",
+    "symbol": "TCS",
+    "segment": "EQ",
+    "time": "2024-06-14T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 330000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1980,
+     "exchange": 59,
+     "sebi": 2,
+     "stamp": 297,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-003",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2024-07-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 15,
+    "pricePaise": 135000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2025,
+     "exchange": 60,
+     "sebi": 2,
+     "stamp": 304,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-017",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2024-07-12T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 15,
+    "pricePaise": 129000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1935,
+     "exchange": 57,
+     "sebi": 2,
+     "stamp": 290,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-007",
+    "symbol": "ITC",
+    "segment": "EQ",
+    "time": "2024-08-02T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 60,
+    "pricePaise": 33500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2010,
+     "exchange": 60,
+     "sebi": 2,
+     "stamp": 302,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-021",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2024-08-09T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 315000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1890,
+     "exchange": 56,
+     "sebi": 2,
+     "stamp": 284,
+     "gst": 370,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-011",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2024-09-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 14,
+    "pricePaise": 141000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1974,
+     "exchange": 59,
+     "sebi": 2,
+     "stamp": 296,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-015",
+    "symbol": "TCS",
+    "segment": "EQ",
+    "time": "2024-10-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 335000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2010,
+     "exchange": 60,
+     "sebi": 2,
+     "stamp": 302,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-019",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2024-11-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 15,
+    "pricePaise": 131000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1965,
+     "exchange": 58,
+     "sebi": 2,
+     "stamp": 295,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-023",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2024-12-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 318000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1908,
+     "exchange": 57,
+     "sebi": 2,
+     "stamp": 286,
+     "gst": 371,
+     "dp": 0
+    }
+   },
+   {
+    "id": "meera-002",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2026-04-13T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 15,
+    "pricePaise": 193491,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2871,
+     "exchange": 72,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-006",
+    "symbol": "ITC",
+    "segment": "EQ",
+    "time": "2026-04-27T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 60,
+    "pricePaise": 48122,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2856,
+     "exchange": 29,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-010",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2026-05-05T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 14,
+    "pricePaise": 203812,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2823,
+     "exchange": 83,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-004",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2026-05-19T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 15,
+    "pricePaise": 195492,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2901,
+     "exchange": 81,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-008",
+    "symbol": "ITC",
+    "segment": "EQ",
+    "time": "2026-06-09T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 60,
+    "pricePaise": 48623,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2886,
+     "exchange": 83,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-014",
+    "symbol": "TCS",
+    "segment": "EQ",
+    "time": "2026-06-23T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 481229,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2856,
+     "exchange": 83,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-012",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2026-07-01T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 14,
+    "pricePaise": 205812,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2850,
+     "exchange": 78,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-018",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-07-21T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 15,
+    "pricePaise": 189491,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2812,
+     "exchange": 83,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-016",
+    "symbol": "TCS",
+    "segment": "EQ",
+    "time": "2026-08-04T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 486230,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2886,
+     "exchange": 83,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-020",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-08-25T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 15,
+    "pricePaise": 191491,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2842,
+     "exchange": 77,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-022",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-09-01T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 482893,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2866,
+     "exchange": 84,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "meera-024",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-09-11T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 485894,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2885,
+     "exchange": 86,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   }
+  ]
+ }
+}

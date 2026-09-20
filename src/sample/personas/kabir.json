@@ -1,0 +1,2629 @@
+{
+ "id": "kabir",
+ "name": "Kabir",
+ "tagline": "Intraday + F&O trader · consultant, ₹14L",
+ "story": "Kabir made ₹80,000 intraday and ₹1,50,000 in F&O, taxed at his slab rate. He files ITR-3, and with no TDS on his consulting income, advance tax is due.",
+ "settings": {
+  "regime": "new",
+  "otherIncomePaise": 140000000,
+  "otherIncomeIsSalary": false,
+  "otherBrokerLtcgPaise": 0
+ },
+ "portfolio": {
+  "source": "sample",
+  "asOf": "2026-09-18T18:00:00+05:30",
+  "tradeHistoryFrom": "2024-04-01",
+  "instruments": [
+   {
+    "symbol": "RELIANCE",
+    "name": "RELIANCE",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "ICICIBANK",
+    "name": "ICICIBANK",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "SBIN",
+    "name": "SBIN",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "INFY",
+    "name": "INFY",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "AXISBANK",
+    "name": "AXISBANK",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "LT",
+    "name": "LT",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "BHARTIARTL",
+    "name": "BHARTIARTL",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TATASTEEL",
+    "name": "TATASTEEL",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "HDFCBANK",
+    "name": "HDFCBANK",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "KOTAKBANK",
+    "name": "KOTAKBANK",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "NIFTY26APRFUT",
+    "name": "NIFTY APRFUT",
+    "assetClass": "FNO",
+    "derivative": "FUT"
+   },
+   {
+    "symbol": "NIFTY26MAYFUT",
+    "name": "NIFTY MAYFUT",
+    "assetClass": "FNO",
+    "derivative": "FUT"
+   },
+   {
+    "symbol": "NIFTY26JUNFUT",
+    "name": "NIFTY JUNFUT",
+    "assetClass": "FNO",
+    "derivative": "FUT"
+   },
+   {
+    "symbol": "NIFTY26JULFUT",
+    "name": "NIFTY JULFUT",
+    "assetClass": "FNO",
+    "derivative": "FUT"
+   },
+   {
+    "symbol": "NIFTY26AUGFUT",
+    "name": "NIFTY AUGFUT",
+    "assetClass": "FNO",
+    "derivative": "FUT"
+   },
+   {
+    "symbol": "NIFTY26SEPFUT",
+    "name": "NIFTY SEPFUT",
+    "assetClass": "FNO",
+    "derivative": "FUT"
+   },
+   {
+    "symbol": "NIFTY26APR24000CE",
+    "name": "NIFTY APR24000CE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26APR24100PE",
+    "name": "NIFTY APR24100PE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26MAY24200CE",
+    "name": "NIFTY MAY24200CE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26MAY24300PE",
+    "name": "NIFTY MAY24300PE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26JUN24400CE",
+    "name": "NIFTY JUN24400CE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26JUN24500PE",
+    "name": "NIFTY JUN24500PE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26JUL24600CE",
+    "name": "NIFTY JUL24600CE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26JUL24700PE",
+    "name": "NIFTY JUL24700PE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26AUG24800CE",
+    "name": "NIFTY AUG24800CE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26AUG24900PE",
+    "name": "NIFTY AUG24900PE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26SEP25000CE",
+    "name": "NIFTY SEP25000CE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   },
+   {
+    "symbol": "NIFTY26SEP25100PE",
+    "name": "NIFTY SEP25100PE",
+    "assetClass": "FNO",
+    "derivative": "OPT"
+   }
+  ],
+  "corporateActions": [],
+  "holdings": [],
+  "trades": [
+   {
+    "id": "kabir-041",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-01T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 2380000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 6176,
+     "sebi": 357,
+     "stamp": 7140,
+     "gst": 1536,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-001",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-04-02T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 140,
+    "pricePaise": 145000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 603,
+     "sebi": 20,
+     "stamp": 609,
+     "gst": 472,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-042",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-02T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 2392000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 174920,
+     "exchange": 6207,
+     "sebi": 359,
+     "stamp": 0,
+     "gst": 1542,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-002",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-04-02T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 140,
+    "pricePaise": 148045,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5182,
+     "exchange": 616,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-043",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-06T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2384000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3093,
+     "sebi": 179,
+     "stamp": 3576,
+     "gst": 949,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-113",
+    "symbol": "NIFTY26APR24000CE",
+    "segment": "FO",
+    "time": "2026-04-07T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-044",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-08T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2376000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 86875,
+     "exchange": 3083,
+     "sebi": 178,
+     "stamp": 0,
+     "gst": 947,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-003",
+    "symbol": "ICICIBANK",
+    "segment": "EQ",
+    "time": "2026-04-09T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 140000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 624,
+     "sebi": 21,
+     "stamp": 630,
+     "gst": 476,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-045",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-09T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2388000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3098,
+     "sebi": 179,
+     "stamp": 3582,
+     "gst": 950,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-114",
+    "symbol": "NIFTY26APR24000CE",
+    "segment": "FO",
+    "time": "2026-04-09T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 20000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4500,
+     "exchange": 1051,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 550,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-004",
+    "symbol": "ICICIBANK",
+    "segment": "EQ",
+    "time": "2026-04-09T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 138880,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5208,
+     "exchange": 619,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-047",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-13T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2392000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3104,
+     "sebi": 179,
+     "stamp": 3588,
+     "gst": 951,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-046",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-13T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2403000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 87863,
+     "exchange": 3118,
+     "sebi": 180,
+     "stamp": 0,
+     "gst": 954,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-005",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-04-16T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 250,
+    "pricePaise": 82000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 609,
+     "sebi": 21,
+     "stamp": 615,
+     "gst": 473,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-048",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-16T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2398000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 87680,
+     "exchange": 3111,
+     "sebi": 180,
+     "stamp": 0,
+     "gst": 952,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-006",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-04-16T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 250,
+    "pricePaise": 83312,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5207,
+     "exchange": 619,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-049",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-17T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2396000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3109,
+     "sebi": 180,
+     "stamp": 3594,
+     "gst": 952,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-115",
+    "symbol": "NIFTY26APR24100PE",
+    "segment": "FO",
+    "time": "2026-04-20T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-050",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-21T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2385000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 87205,
+     "exchange": 3095,
+     "sebi": 179,
+     "stamp": 0,
+     "gst": 949,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-051",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-22T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2400000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3114,
+     "sebi": 180,
+     "stamp": 3600,
+     "gst": 953,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-116",
+    "symbol": "NIFTY26APR24100PE",
+    "segment": "FO",
+    "time": "2026-04-22T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 13500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 3038,
+     "exchange": 709,
+     "sebi": 2,
+     "stamp": 0,
+     "gst": 488,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-007",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2026-04-23T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 130,
+    "pricePaise": 156000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 602,
+     "sebi": 20,
+     "stamp": 608,
+     "gst": 472,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-008",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2026-04-23T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 130,
+    "pricePaise": 159744,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5192,
+     "exchange": 617,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-052",
+    "symbol": "NIFTY26APRFUT",
+    "segment": "FO",
+    "time": "2026-04-24T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2420000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88484,
+     "exchange": 3140,
+     "sebi": 182,
+     "stamp": 0,
+     "gst": 958,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-053",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-04-27T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2404000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3119,
+     "sebi": 180,
+     "stamp": 3606,
+     "gst": 954,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-054",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-04-29T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2413000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88228,
+     "exchange": 3131,
+     "sebi": 181,
+     "stamp": 0,
+     "gst": 956,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-009",
+    "symbol": "AXISBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 170,
+    "pricePaise": 118000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 596,
+     "sebi": 20,
+     "stamp": 602,
+     "gst": 471,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-055",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-04T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 2408000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 6249,
+     "sebi": 361,
+     "stamp": 7224,
+     "gst": 1550,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-117",
+    "symbol": "NIFTY26MAY24200CE",
+    "segment": "FO",
+    "time": "2026-05-04T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-056",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-04T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 2402000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 175652,
+     "exchange": 6233,
+     "sebi": 360,
+     "stamp": 0,
+     "gst": 1547,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-010",
+    "symbol": "AXISBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 170,
+    "pricePaise": 116702,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4960,
+     "exchange": 589,
+     "sebi": 20,
+     "stamp": 0,
+     "gst": 470,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-057",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-05T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2412000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3130,
+     "sebi": 181,
+     "stamp": 3618,
+     "gst": 956,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-118",
+    "symbol": "NIFTY26MAY24200CE",
+    "segment": "FO",
+    "time": "2026-05-05T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 21500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4838,
+     "exchange": 1130,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 564,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-011",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-05-07T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 55,
+    "pricePaise": 365000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 596,
+     "sebi": 20,
+     "stamp": 602,
+     "gst": 471,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-058",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-07T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2426000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88703,
+     "exchange": 3148,
+     "sebi": 182,
+     "stamp": 0,
+     "gst": 959,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-012",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-05-07T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 55,
+    "pricePaise": 371935,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5114,
+     "exchange": 608,
+     "sebi": 20,
+     "stamp": 0,
+     "gst": 473,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-059",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-08T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2416000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3135,
+     "sebi": 181,
+     "stamp": 3624,
+     "gst": 957,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-060",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-12T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2420000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88484,
+     "exchange": 3140,
+     "sebi": 182,
+     "stamp": 0,
+     "gst": 958,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-061",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-13T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2420000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3140,
+     "sebi": 182,
+     "stamp": 3630,
+     "gst": 958,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-013",
+    "symbol": "BHARTIARTL",
+    "segment": "EQ",
+    "time": "2026-05-14T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 105,
+    "pricePaise": 192000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 599,
+     "sebi": 20,
+     "stamp": 605,
+     "gst": 471,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-119",
+    "symbol": "NIFTY26MAY24300PE",
+    "segment": "FO",
+    "time": "2026-05-14T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-014",
+    "symbol": "BHARTIARTL",
+    "segment": "EQ",
+    "time": "2026-05-14T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 105,
+    "pricePaise": 197376,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5181,
+     "exchange": 616,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-062",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-15T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2407000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88009,
+     "exchange": 3123,
+     "sebi": 181,
+     "stamp": 0,
+     "gst": 955,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-063",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-18T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2424000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3145,
+     "sebi": 182,
+     "stamp": 3636,
+     "gst": 959,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-120",
+    "symbol": "NIFTY26MAY24300PE",
+    "segment": "FO",
+    "time": "2026-05-18T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 13000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2925,
+     "exchange": 683,
+     "sebi": 2,
+     "stamp": 0,
+     "gst": 483,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-064",
+    "symbol": "NIFTY26MAYFUT",
+    "segment": "FO",
+    "time": "2026-05-20T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2441000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 89252,
+     "exchange": 3167,
+     "sebi": 183,
+     "stamp": 0,
+     "gst": 963,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-015",
+    "symbol": "TATASTEEL",
+    "segment": "EQ",
+    "time": "2026-05-21T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 1300,
+    "pricePaise": 15200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 587,
+     "sebi": 20,
+     "stamp": 593,
+     "gst": 469,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-065",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-05-21T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2428000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3150,
+     "sebi": 182,
+     "stamp": 3642,
+     "gst": 960,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-016",
+    "symbol": "TATASTEEL",
+    "segment": "EQ",
+    "time": "2026-05-21T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 1300,
+    "pricePaise": 15109,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4910,
+     "exchange": 583,
+     "sebi": 20,
+     "stamp": 0,
+     "gst": 469,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-066",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-05-25T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2440000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 89215,
+     "exchange": 3166,
+     "sebi": 183,
+     "stamp": 0,
+     "gst": 963,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-067",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-05-26T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2432000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3156,
+     "sebi": 182,
+     "stamp": 3648,
+     "gst": 961,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-017",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2026-05-27T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 105,
+    "pricePaise": 196000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 611,
+     "sebi": 21,
+     "stamp": 617,
+     "gst": 474,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-121",
+    "symbol": "NIFTY26JUN24400CE",
+    "segment": "FO",
+    "time": "2026-05-27T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-068",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-05-27T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2424000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88630,
+     "exchange": 3145,
+     "sebi": 182,
+     "stamp": 0,
+     "gst": 959,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-018",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2026-05-27T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 105,
+    "pricePaise": 198744,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5217,
+     "exchange": 620,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-069",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-01T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 2436000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 6321,
+     "sebi": 365,
+     "stamp": 7308,
+     "gst": 1563,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-122",
+    "symbol": "NIFTY26JUN24400CE",
+    "segment": "FO",
+    "time": "2026-06-01T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 19500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4388,
+     "exchange": 1025,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 545,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-070",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-02T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 2451000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 179236,
+     "exchange": 6360,
+     "sebi": 368,
+     "stamp": 0,
+     "gst": 1571,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-071",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-03T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2440000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3166,
+     "sebi": 183,
+     "stamp": 3660,
+     "gst": 963,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-019",
+    "symbol": "KOTAKBANK",
+    "segment": "EQ",
+    "time": "2026-06-04T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 100,
+    "pricePaise": 205000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 609,
+     "sebi": 21,
+     "stamp": 615,
+     "gst": 473,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-020",
+    "symbol": "KOTAKBANK",
+    "segment": "EQ",
+    "time": "2026-06-04T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 100,
+    "pricePaise": 209510,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5238,
+     "exchange": 622,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 476,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-072",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-05T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2446000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 89435,
+     "exchange": 3174,
+     "sebi": 183,
+     "stamp": 0,
+     "gst": 964,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-073",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-08T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2444000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3171,
+     "sebi": 183,
+     "stamp": 3666,
+     "gst": 964,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-123",
+    "symbol": "NIFTY26JUN24500PE",
+    "segment": "FO",
+    "time": "2026-06-09T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-074",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-10T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2433000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 88960,
+     "exchange": 3157,
+     "sebi": 182,
+     "stamp": 0,
+     "gst": 961,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-021",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-06-11T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 140,
+    "pricePaise": 145000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 603,
+     "sebi": 20,
+     "stamp": 609,
+     "gst": 472,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-075",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-11T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2448000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3176,
+     "sebi": 184,
+     "stamp": 3672,
+     "gst": 965,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-124",
+    "symbol": "NIFTY26JUN24500PE",
+    "segment": "FO",
+    "time": "2026-06-11T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 22000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4950,
+     "exchange": 1156,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 569,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-022",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-06-11T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 140,
+    "pricePaise": 148045,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5182,
+     "exchange": 616,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-076",
+    "symbol": "NIFTY26JUNFUT",
+    "segment": "FO",
+    "time": "2026-06-15T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2468000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 90239,
+     "exchange": 3202,
+     "sebi": 185,
+     "stamp": 0,
+     "gst": 970,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-077",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-16T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2452000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3181,
+     "sebi": 184,
+     "stamp": 3678,
+     "gst": 966,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-023",
+    "symbol": "ICICIBANK",
+    "segment": "EQ",
+    "time": "2026-06-18T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 140000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 624,
+     "sebi": 21,
+     "stamp": 630,
+     "gst": 476,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-078",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-18T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2461000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 89983,
+     "exchange": 3193,
+     "sebi": 185,
+     "stamp": 0,
+     "gst": 968,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-024",
+    "symbol": "ICICIBANK",
+    "segment": "EQ",
+    "time": "2026-06-18T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 138880,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5208,
+     "exchange": 619,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-079",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-19T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2456000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3187,
+     "sebi": 184,
+     "stamp": 3684,
+     "gst": 967,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-125",
+    "symbol": "NIFTY26JUL24600CE",
+    "segment": "FO",
+    "time": "2026-06-22T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-080",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-23T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2450000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 89581,
+     "exchange": 3179,
+     "sebi": 184,
+     "stamp": 0,
+     "gst": 965,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-081",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-24T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2460000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3192,
+     "sebi": 185,
+     "stamp": 3690,
+     "gst": 968,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-126",
+    "symbol": "NIFTY26JUL24600CE",
+    "segment": "FO",
+    "time": "2026-06-24T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 20000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4500,
+     "exchange": 1051,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 550,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-025",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-06-25T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 250,
+    "pricePaise": 82000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 609,
+     "sebi": 21,
+     "stamp": 615,
+     "gst": 473,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-082",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-25T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2474000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 90458,
+     "exchange": 3210,
+     "sebi": 186,
+     "stamp": 0,
+     "gst": 971,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-026",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-06-25T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 250,
+    "pricePaise": 83312,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5207,
+     "exchange": 619,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-083",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-06-29T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 2464000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 6394,
+     "sebi": 370,
+     "stamp": 7392,
+     "gst": 1578,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-084",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-07-01T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 2468000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 180479,
+     "exchange": 6404,
+     "sebi": 370,
+     "stamp": 0,
+     "gst": 1579,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-027",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2026-07-02T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 130,
+    "pricePaise": 156000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 602,
+     "sebi": 20,
+     "stamp": 608,
+     "gst": 472,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-085",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-07-02T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2468000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3202,
+     "sebi": 185,
+     "stamp": 3702,
+     "gst": 970,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-028",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2026-07-02T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 130,
+    "pricePaise": 159744,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5192,
+     "exchange": 617,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-127",
+    "symbol": "NIFTY26JUL24700PE",
+    "segment": "FO",
+    "time": "2026-07-03T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-086",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-07-06T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2455000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 89764,
+     "exchange": 3185,
+     "sebi": 184,
+     "stamp": 0,
+     "gst": 966,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-087",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-07-07T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2472000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3207,
+     "sebi": 185,
+     "stamp": 3708,
+     "gst": 971,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-128",
+    "symbol": "NIFTY26JUL24700PE",
+    "segment": "FO",
+    "time": "2026-07-07T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 13500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 3038,
+     "exchange": 709,
+     "sebi": 2,
+     "stamp": 0,
+     "gst": 488,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-029",
+    "symbol": "AXISBANK",
+    "segment": "EQ",
+    "time": "2026-07-09T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 170,
+    "pricePaise": 118000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 596,
+     "sebi": 20,
+     "stamp": 602,
+     "gst": 471,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-088",
+    "symbol": "NIFTY26JULFUT",
+    "segment": "FO",
+    "time": "2026-07-09T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2489000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91007,
+     "exchange": 3229,
+     "sebi": 187,
+     "stamp": 0,
+     "gst": 975,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-030",
+    "symbol": "AXISBANK",
+    "segment": "EQ",
+    "time": "2026-07-09T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 170,
+    "pricePaise": 116702,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4960,
+     "exchange": 589,
+     "sebi": 20,
+     "stamp": 0,
+     "gst": 470,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-089",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-10T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2476000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3213,
+     "sebi": 186,
+     "stamp": 3714,
+     "gst": 972,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-090",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-14T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2488000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 90970,
+     "exchange": 3228,
+     "sebi": 187,
+     "stamp": 0,
+     "gst": 975,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-091",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-15T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2480000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3218,
+     "sebi": 186,
+     "stamp": 3720,
+     "gst": 973,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-031",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-07-16T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 55,
+    "pricePaise": 365000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 596,
+     "sebi": 20,
+     "stamp": 602,
+     "gst": 471,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-129",
+    "symbol": "NIFTY26AUG24800CE",
+    "segment": "FO",
+    "time": "2026-07-16T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-032",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-07-16T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 55,
+    "pricePaise": 371935,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5114,
+     "exchange": 608,
+     "sebi": 20,
+     "stamp": 0,
+     "gst": 473,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-092",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-17T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2472000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 90385,
+     "exchange": 3207,
+     "sebi": 185,
+     "stamp": 0,
+     "gst": 971,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-093",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-20T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2484000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3223,
+     "sebi": 186,
+     "stamp": 3726,
+     "gst": 974,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-130",
+    "symbol": "NIFTY26AUG24800CE",
+    "segment": "FO",
+    "time": "2026-07-20T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 21500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4838,
+     "exchange": 1130,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 564,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-094",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-22T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2499000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91373,
+     "exchange": 3242,
+     "sebi": 187,
+     "stamp": 0,
+     "gst": 977,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-033",
+    "symbol": "BHARTIARTL",
+    "segment": "EQ",
+    "time": "2026-07-23T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 105,
+    "pricePaise": 192000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 599,
+     "sebi": 20,
+     "stamp": 605,
+     "gst": 471,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-095",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-23T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2488000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3228,
+     "sebi": 187,
+     "stamp": 3732,
+     "gst": 975,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-034",
+    "symbol": "BHARTIARTL",
+    "segment": "EQ",
+    "time": "2026-07-23T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 105,
+    "pricePaise": 197376,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5181,
+     "exchange": 616,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-096",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-27T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2494000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91190,
+     "exchange": 3236,
+     "sebi": 187,
+     "stamp": 0,
+     "gst": 976,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-097",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-28T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 2492000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 6467,
+     "sebi": 374,
+     "stamp": 7476,
+     "gst": 1591,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-131",
+    "symbol": "NIFTY26AUG24900PE",
+    "segment": "FO",
+    "time": "2026-07-29T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-035",
+    "symbol": "TATASTEEL",
+    "segment": "EQ",
+    "time": "2026-07-30T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 1300,
+    "pricePaise": 15200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 587,
+     "sebi": 20,
+     "stamp": 593,
+     "gst": 469,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-098",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-07-30T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 2481000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 181429,
+     "exchange": 6438,
+     "sebi": 372,
+     "stamp": 0,
+     "gst": 1586,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-036",
+    "symbol": "TATASTEEL",
+    "segment": "EQ",
+    "time": "2026-07-30T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 1300,
+    "pricePaise": 15109,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4910,
+     "exchange": 583,
+     "sebi": 20,
+     "stamp": 0,
+     "gst": 469,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-099",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-08-03T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2496000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3239,
+     "sebi": 187,
+     "stamp": 3744,
+     "gst": 977,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-132",
+    "symbol": "NIFTY26AUG24900PE",
+    "segment": "FO",
+    "time": "2026-08-03T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 13000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2925,
+     "exchange": 683,
+     "sebi": 2,
+     "stamp": 0,
+     "gst": 483,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-100",
+    "symbol": "NIFTY26AUGFUT",
+    "segment": "FO",
+    "time": "2026-08-04T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2516000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91994,
+     "exchange": 3265,
+     "sebi": 189,
+     "stamp": 0,
+     "gst": 982,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-101",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-05T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2500000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3244,
+     "sebi": 188,
+     "stamp": 3750,
+     "gst": 978,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-037",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2026-08-06T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 105,
+    "pricePaise": 196000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 611,
+     "sebi": 21,
+     "stamp": 617,
+     "gst": 474,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-038",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2026-08-06T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 105,
+    "pricePaise": 198744,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 5217,
+     "exchange": 620,
+     "sebi": 21,
+     "stamp": 0,
+     "gst": 475,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-102",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-07T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2509000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91738,
+     "exchange": 3255,
+     "sebi": 188,
+     "stamp": 0,
+     "gst": 980,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-103",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-10T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2504000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3249,
+     "sebi": 188,
+     "stamp": 3756,
+     "gst": 979,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-133",
+    "symbol": "NIFTY26SEP25000CE",
+    "segment": "FO",
+    "time": "2026-08-11T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-104",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-12T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2498000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91336,
+     "exchange": 3241,
+     "sebi": 187,
+     "stamp": 0,
+     "gst": 977,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-039",
+    "symbol": "KOTAKBANK",
+    "segment": "EQ",
+    "time": "2026-08-13T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 100,
+    "pricePaise": 205000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 609,
+     "sebi": 21,
+     "stamp": 615,
+     "gst": 473,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-105",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-13T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2508000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3254,
+     "sebi": 188,
+     "stamp": 3762,
+     "gst": 980,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-134",
+    "symbol": "NIFTY26SEP25000CE",
+    "segment": "FO",
+    "time": "2026-08-13T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 19500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4388,
+     "exchange": 1025,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 545,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-040",
+    "symbol": "KOTAKBANK",
+    "segment": "EQ",
+    "time": "2026-08-13T14:45:00+05:30",
+    "side": "SELL",
+    "qty": 100,
+    "pricePaise": 243528,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 6088,
+     "exchange": 679,
+     "sebi": 24,
+     "stamp": 0,
+     "gst": 494,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-106",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-17T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2522000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 92213,
+     "exchange": 3272,
+     "sebi": 189,
+     "stamp": 0,
+     "gst": 983,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-107",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-18T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2512000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3259,
+     "sebi": 188,
+     "stamp": 3768,
+     "gst": 980,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-108",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-20T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2516000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91994,
+     "exchange": 3265,
+     "sebi": 189,
+     "stamp": 0,
+     "gst": 982,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-109",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-21T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 75,
+    "pricePaise": 2516000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 3265,
+     "sebi": 189,
+     "stamp": 3774,
+     "gst": 982,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-135",
+    "symbol": "NIFTY26SEP25100PE",
+    "segment": "FO",
+    "time": "2026-08-24T11:00:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 16000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 841,
+     "sebi": 2,
+     "stamp": 72,
+     "gst": 512,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-110",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-25T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 75,
+    "pricePaise": 2503000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 91519,
+     "exchange": 3248,
+     "sebi": 188,
+     "stamp": 0,
+     "gst": 978,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-111",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-26T10:15:00+05:30",
+    "side": "BUY",
+    "qty": 150,
+    "pricePaise": 2520000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 6539,
+     "sebi": 378,
+     "stamp": 7560,
+     "gst": 1605,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-136",
+    "symbol": "NIFTY26SEP25100PE",
+    "segment": "FO",
+    "time": "2026-08-26T14:00:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 21400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 4815,
+     "exchange": 1024,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 563,
+     "dp": 0
+    }
+   },
+   {
+    "id": "kabir-112",
+    "symbol": "NIFTY26SEPFUT",
+    "segment": "FO",
+    "time": "2026-08-28T14:20:00+05:30",
+    "side": "SELL",
+    "qty": 150,
+    "pricePaise": 2537000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 185533,
+     "exchange": 6584,
+     "sebi": 381,
+     "stamp": 0,
+     "gst": 1614,
+     "dp": 0
+    }
+   }
+  ]
+ }
+}

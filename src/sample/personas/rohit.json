@@ -1,0 +1,3681 @@
+{
+ "id": "rohit",
+ "name": "Rohit",
+ "tagline": "Active small trader · ₹6L salary",
+ "story": "Rohit placed 200 delivery orders, 190 of them under ₹2,000. Charges took more than a third of his gains, 2.6× his tax.",
+ "openPanel": "charges",
+ "settings": {
+  "regime": "new",
+  "otherIncomePaise": 60000000,
+  "otherIncomeIsSalary": true,
+  "otherBrokerLtcgPaise": 0
+ },
+ "portfolio": {
+  "source": "sample",
+  "asOf": "2026-09-18T18:00:00+05:30",
+  "tradeHistoryFrom": "2024-04-01",
+  "instruments": [
+   {
+    "symbol": "IRFC",
+    "name": "Indian Railway Finance Corp",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "SUZLON",
+    "name": "Suzlon Energy",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "YESBANK",
+    "name": "Yes Bank",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "NHPC",
+    "name": "NHPC",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "SJVN",
+    "name": "SJVN",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "IREDA",
+    "name": "IREDA",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "NBCC",
+    "name": "NBCC",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "RVNL",
+    "name": "Rail Vikas Nigam",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "BHEL",
+    "name": "BHEL",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "IDEA",
+    "name": "Vodafone Idea",
+    "assetClass": "STOCK"
+   }
+  ],
+  "corporateActions": [],
+  "holdings": [
+   {
+    "symbol": "IDEA",
+    "qty": 280,
+    "avgPricePaise": 872,
+    "ltpPaise": 930
+   }
+  ],
+  "trades": [
+   {
+    "id": "rohit-001",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12544,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-003",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-002",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-01T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12672,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-004",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-01T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12928,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-005",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-02T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 13056,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-007",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-02T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12672,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-006",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-02T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12544,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-008",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-02T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-009",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12928,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-010",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-06T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 13056,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-011",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-07T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12544,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-012",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-07T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12672,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-013",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-014",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-08T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12928,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-015",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-09T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 13056,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-016",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-09T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12544,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-017",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12672,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-018",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-10T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-019",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 12928,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 61,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-021",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-15T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 5978,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-022",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-15T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6039,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-020",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 95,
+    "pricePaise": 14208,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1263,
+     "exchange": 40,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 700,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-023",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-16T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6100,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-024",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-16T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6161,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-025",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6222,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-026",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-17T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 5978,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-027",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-20T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6039,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-028",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-20T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6100,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-029",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-21T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6161,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-030",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-21T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6222,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-031",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-22T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 5978,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-032",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-22T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6039,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-033",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-23T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6100,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-034",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-23T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6161,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-035",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-24T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6222,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-036",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-24T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 5978,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-037",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-27T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6039,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-038",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-27T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6100,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-039",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-28T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 6161,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-040",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-04-29T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 190,
+    "pricePaise": 6466,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1150,
+     "exchange": 36,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 700,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-041",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2009,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-043",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2050,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-045",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2091,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-042",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2029,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-044",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2071,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-046",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-04T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2009,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-047",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2029,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-048",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-05T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2050,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-049",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2071,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-050",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-06T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2091,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-051",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-07T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2009,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-052",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-07T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2029,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-053",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2050,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-054",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-08T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2071,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-055",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2091,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-056",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-11T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2009,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-057",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-12T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2029,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-058",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-12T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2050,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-059",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 30,
+    "pricePaise": 2071,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-060",
+    "symbol": "YESBANK",
+    "segment": "EQ",
+    "time": "2026-05-14T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 570,
+    "pricePaise": 1988,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1060,
+     "exchange": 34,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 699,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-061",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-15T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8232,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-062",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-15T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8316,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-063",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-18T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-064",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-18T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-065",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-19T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8568,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-066",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-19T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8232,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-067",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-20T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8316,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-068",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-20T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-069",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-21T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-070",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-21T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8568,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-071",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-22T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8232,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-072",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-22T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8316,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-073",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-25T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-074",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-25T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-075",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-26T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8568,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-076",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-26T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8232,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-077",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-27T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8316,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 54,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-079",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-27T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-078",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-05-27T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 8400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 55,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-081",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 9996,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-082",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-01T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10098,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-080",
+    "symbol": "NHPC",
+    "segment": "EQ",
+    "time": "2026-06-01T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 133,
+    "pricePaise": 9156,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1140,
+     "exchange": 36,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 700,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-083",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-02T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-084",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-02T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10302,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-085",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10404,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-086",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-03T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 9996,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-087",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10098,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-088",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-04T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-089",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10302,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-090",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-05T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10404,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-091",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 9996,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-092",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-08T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10098,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-093",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-09T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-094",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-09T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10302,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-095",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10404,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-096",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-10T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 9996,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 56,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-097",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10098,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-098",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-11T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-099",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-12T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10302,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-100",
+    "symbol": "SJVN",
+    "segment": "EQ",
+    "time": "2026-06-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 114,
+    "pricePaise": 11526,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1230,
+     "exchange": 39,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 700,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-101",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-16T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-102",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-16T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15642,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-103",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-104",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-17T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15958,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-105",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-18T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 16116,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-106",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-18T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-107",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-19T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15642,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-108",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-19T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-109",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-22T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15958,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-110",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-22T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 16116,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-111",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-23T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-112",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-23T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15642,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-113",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-24T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-114",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-24T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15958,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-115",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-25T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 16116,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-117",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-25T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15642,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-116",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-25T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15484,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-118",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-25T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-119",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-06-29T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 15958,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-121",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-122",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-01T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10296,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-120",
+    "symbol": "IREDA",
+    "segment": "EQ",
+    "time": "2026-07-01T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 76,
+    "pricePaise": 16432,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1169,
+     "exchange": 37,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 700,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-123",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-02T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-124",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-02T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10504,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-125",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10608,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-126",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-03T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-127",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10296,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-128",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-06T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-129",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-07T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10504,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-130",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-07T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10608,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-131",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-132",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-08T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10296,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-133",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-09T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-134",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-09T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10504,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-135",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10608,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-136",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-10T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-137",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10296,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-138",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-13T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-139",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-14T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 10504,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-140",
+    "symbol": "NBCC",
+    "segment": "EQ",
+    "time": "2026-07-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 114,
+    "pricePaise": 9880,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1054,
+     "exchange": 33,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 699,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-141",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-16T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33516,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-142",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-16T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33858,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-143",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-144",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-17T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34542,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-145",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-20T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34884,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 66,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-146",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-20T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33516,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-147",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-21T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33858,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-148",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-21T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-149",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-22T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34542,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-150",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-22T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34884,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 66,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-151",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-23T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33516,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-152",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-23T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33858,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-153",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-24T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-154",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-24T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34542,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-155",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-27T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34884,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 66,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-156",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-27T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33516,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-157",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-28T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 33858,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-158",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-28T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-159",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-29T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 34542,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-160",
+    "symbol": "RVNL",
+    "segment": "EQ",
+    "time": "2026-07-30T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 38,
+    "pricePaise": 37620,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1338,
+     "exchange": 42,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 701,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-161",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22344,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-163",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-162",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-03T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22572,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-164",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-03T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23028,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-165",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23256,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 66,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-166",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-04T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22344,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-167",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22572,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-168",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-05T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-169",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23028,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-170",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-06T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23256,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 66,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-171",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-07T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22344,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-172",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-07T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22572,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-173",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-174",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-10T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23028,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-175",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23256,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 66,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-176",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-11T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22344,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 63,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-177",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-12T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22572,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-178",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-12T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 22800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 64,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-179",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 3,
+    "pricePaise": 23028,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 65,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-180",
+    "symbol": "BHEL",
+    "segment": "EQ",
+    "time": "2026-08-14T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 57,
+    "pricePaise": 37223,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1986,
+     "exchange": 60,
+     "sebi": 2,
+     "stamp": 0,
+     "gst": 705,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "rohit-181",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 872,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-182",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-17T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 881,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-183",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-18T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 890,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-184",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-18T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 899,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-185",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-19T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 908,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-186",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-19T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 872,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-187",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-20T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 881,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-188",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-20T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 890,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-189",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-21T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 899,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-190",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-21T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 908,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-191",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-24T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 872,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-192",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-24T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 881,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-193",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-25T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 890,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-194",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-25T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 899,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-195",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-26T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 908,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 60,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 10,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-196",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-26T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 872,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 57,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-197",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-27T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 881,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-198",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-27T13:10:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 890,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 58,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-199",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-08-28T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 70,
+    "pricePaise": 899,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 59,
+     "exchange": 2,
+     "sebi": 0,
+     "stamp": 9,
+     "gst": 360,
+     "dp": 0
+    }
+   },
+   {
+    "id": "rohit-200",
+    "symbol": "IDEA",
+    "segment": "EQ",
+    "time": "2026-09-01T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 1050,
+    "pricePaise": 952,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 929,
+     "exchange": 30,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 699,
+     "dp": 1850
+    }
+   }
+  ]
+ }
+}

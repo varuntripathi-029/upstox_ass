@@ -1,0 +1,1962 @@
+{
+ "id": "priya",
+ "name": "Priya",
+ "tagline": "Salaried · ₹9L salary · new regime",
+ "story": "Priya made ₹42,620 this year and keeps ₹36,122. INFY turns long-term in 23 days, and her income is within the ₹12L rebate, which does not cover tax on stock gains.",
+ "settings": {
+  "regime": "new",
+  "otherIncomePaise": 90000000,
+  "otherIncomeIsSalary": true,
+  "otherBrokerLtcgPaise": 0
+ },
+ "portfolio": {
+  "source": "sample",
+  "asOf": "2026-09-18T18:00:00+05:30",
+  "tradeHistoryFrom": "2024-04-01",
+  "instruments": [
+   {
+    "symbol": "HDFCBANK",
+    "name": "HDFC Bank",
+    "isin": "INE040A01034",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "INFY",
+    "name": "Infosys",
+    "isin": "INE009A01021",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "ITC",
+    "name": "ITC",
+    "isin": "INE154A01025",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TATAMOTORS",
+    "name": "Tata Motors",
+    "isin": "INE155A01022",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "NIFTYBEES",
+    "name": "Nippon India ETF Nifty 50 BeES",
+    "isin": "INF204KB14I2",
+    "assetClass": "EQUITY_ETF"
+   },
+   {
+    "symbol": "LT",
+    "name": "Larsen & Toubro",
+    "isin": "INE018A01030",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TITAN",
+    "name": "Titan Company",
+    "isin": "INE280A01028",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "RELIANCE",
+    "name": "Reliance Industries",
+    "isin": "INE002A01018",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "BHARTIARTL",
+    "name": "Bharti Airtel",
+    "isin": "INE397D01024",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "PAYTM",
+    "name": "One 97 Communications",
+    "isin": "INE982J01020",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "WIPRO",
+    "name": "Wipro",
+    "isin": "INE075A01022",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "HAL",
+    "name": "Hindustan Aeronautics",
+    "isin": "INE066F01020",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "COALINDIA",
+    "name": "Coal India",
+    "isin": "INE522F01014",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TATAPOWER",
+    "name": "Tata Power",
+    "isin": "INE245A01021",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "IRFC",
+    "name": "Indian Railway Finance Corp",
+    "isin": "INE053F01010",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "SBIN",
+    "name": "State Bank of India",
+    "isin": "INE062A01020",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "ETERNAL",
+    "name": "Eternal",
+    "isin": "INE758T01015",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "BEL",
+    "name": "Bharat Electronics",
+    "isin": "INE263A01024",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "TATASTEEL",
+    "name": "Tata Steel",
+    "isin": "INE081A01020",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "ADANIENT",
+    "name": "Adani Enterprises",
+    "isin": "INE423A01024",
+    "assetClass": "STOCK"
+   },
+   {
+    "symbol": "SUZLON",
+    "name": "Suzlon Energy",
+    "isin": "INE040H01021",
+    "assetClass": "STOCK"
+   }
+  ],
+  "corporateActions": [],
+  "holdings": [
+   {
+    "symbol": "HDFCBANK",
+    "qty": 40,
+    "avgPricePaise": 196000,
+    "ltpPaise": 274596
+   },
+   {
+    "symbol": "INFY",
+    "qty": 60,
+    "avgPricePaise": 149900,
+    "ltpPaise": 164968
+   },
+   {
+    "symbol": "ITC",
+    "qty": 250,
+    "avgPricePaise": 41020,
+    "ltpPaise": 40598
+   },
+   {
+    "symbol": "TATAMOTORS",
+    "qty": 45,
+    "avgPricePaise": 68050,
+    "ltpPaise": 77449
+   },
+   {
+    "symbol": "NIFTYBEES",
+    "qty": 90,
+    "avgPricePaise": 27010,
+    "ltpPaise": 29931
+   }
+  ],
+  "trades": [
+   {
+    "id": "T007",
+    "symbol": "TITAN",
+    "segment": "EQ",
+    "time": "2024-05-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 7,
+    "pricePaise": 305000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2135,
+     "exchange": 63,
+     "sebi": 2,
+     "stamp": 320,
+     "gst": 372,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T006",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2024-06-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 262000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1572,
+     "exchange": 47,
+     "sebi": 2,
+     "stamp": 236,
+     "gst": 369,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T001",
+    "symbol": "HDFCBANK",
+    "segment": "EQ",
+    "time": "2025-08-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 40,
+    "pricePaise": 196000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 7840,
+     "exchange": 253,
+     "sebi": 8,
+     "stamp": 1176,
+     "gst": 403,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T002",
+    "symbol": "INFY",
+    "segment": "EQ",
+    "time": "2025-10-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 60,
+    "pricePaise": 149900,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 8994,
+     "exchange": 312,
+     "sebi": 9,
+     "stamp": 1349,
+     "gst": 410,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T010",
+    "symbol": "PAYTM",
+    "segment": "EQ",
+    "time": "2025-11-07T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 20,
+    "pricePaise": 128000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2560,
+     "exchange": 76,
+     "sebi": 3,
+     "stamp": 384,
+     "gst": 374,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T003",
+    "symbol": "ITC",
+    "segment": "EQ",
+    "time": "2025-11-20T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 250,
+    "pricePaise": 41020,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 10255,
+     "exchange": 535,
+     "sebi": 10,
+     "stamp": 1538,
+     "gst": 417,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T008",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2025-12-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 15,
+    "pricePaise": 148000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2220,
+     "exchange": 66,
+     "sebi": 2,
+     "stamp": 333,
+     "gst": 372,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T004",
+    "symbol": "TATAMOTORS",
+    "segment": "EQ",
+    "time": "2026-01-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 45,
+    "pricePaise": 68050,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 3062,
+     "exchange": 116,
+     "sebi": 3,
+     "stamp": 459,
+     "gst": 377,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T009",
+    "symbol": "BHARTIARTL",
+    "segment": "EQ",
+    "time": "2026-01-16T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 12,
+    "pricePaise": 190000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2280,
+     "exchange": 68,
+     "sebi": 2,
+     "stamp": 342,
+     "gst": 373,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T011",
+    "symbol": "WIPRO",
+    "segment": "EQ",
+    "time": "2026-02-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 60,
+    "pricePaise": 26000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1560,
+     "exchange": 46,
+     "sebi": 2,
+     "stamp": 234,
+     "gst": 369,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T005",
+    "symbol": "NIFTYBEES",
+    "segment": "EQ",
+    "time": "2026-03-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 90,
+    "pricePaise": 27010,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2431,
+     "exchange": 150,
+     "sebi": 2,
+     "stamp": 365,
+     "gst": 373,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T012",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-02T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14332,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 143,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T085",
+    "symbol": "HAL",
+    "segment": "EQ",
+    "time": "2026-04-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 4,
+    "pricePaise": 430000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1322,
+     "exchange": 51,
+     "sebi": 2,
+     "stamp": 258,
+     "gst": 370,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T014",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-04-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 152,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T074",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-04-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 39800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 306,
+     "exchange": 12,
+     "sebi": 0,
+     "stamp": 60,
+     "gst": 362,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T013",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-04-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 151,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T016",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-04-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 32526,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 150,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T084",
+    "symbol": "WIPRO",
+    "segment": "EQ",
+    "time": "2026-04-21T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 60,
+    "pricePaise": 23200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1069,
+     "exchange": 41,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 701,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T092",
+    "symbol": "BEL",
+    "segment": "EQ",
+    "time": "2026-04-23T09:40:00+05:30",
+    "side": "BUY",
+    "qty": 36,
+    "pricePaise": 30000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 32,
+     "sebi": 1,
+     "stamp": 32,
+     "gst": 366,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T093",
+    "symbol": "BEL",
+    "segment": "EQ",
+    "time": "2026-04-23T13:10:00+05:30",
+    "side": "SELL",
+    "qty": 36,
+    "pricePaise": 31600,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 284,
+     "exchange": 34,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 366,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T015",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-04-23T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 96281,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 148,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T075",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-04-27T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 40500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 311,
+     "exchange": 12,
+     "sebi": 0,
+     "stamp": 61,
+     "gst": 362,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T017",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-04-28T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32916,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 151,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T018",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14400,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 177,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T020",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-05-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 187,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T022",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-05-06T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 95874,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 182,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T019",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-08T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T024",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-11T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T086",
+    "symbol": "RELIANCE",
+    "segment": "EQ",
+    "time": "2026-05-13T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 15,
+    "pricePaise": 185000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2628,
+     "exchange": 82,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 708,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T021",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-05-14T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 31600,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 180,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T026",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-05-15T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 30620,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 174,
+     "exchange": 5,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T023",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-05-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 187,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T028",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-05-18T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 187,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T025",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-19T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 14706,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 181,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T030",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-20T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14894,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 184,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T032",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-05-21T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 187,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T034",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-22T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14067,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 173,
+     "exchange": 5,
+     "sebi": 0,
+     "stamp": 27,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T027",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-05-25T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 187,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T076",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-05-26T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 12,
+    "pricePaise": 41200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 468,
+     "exchange": 15,
+     "sebi": 0,
+     "stamp": 74,
+     "gst": 363,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T029",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-05-26T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 96973,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 184,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T031",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-27T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T033",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-05-27T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32193,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 183,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T035",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-05-27T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T036",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-06-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 94588,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 178,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T087",
+    "symbol": "PAYTM",
+    "segment": "EQ",
+    "time": "2026-06-03T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 20,
+    "pricePaise": 115483,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2175,
+     "exchange": 52,
+     "sebi": 2,
+     "stamp": 0,
+     "gst": 706,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T038",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-06-05T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 185,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T037",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-06-08T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T081",
+    "symbol": "TATAPOWER",
+    "segment": "EQ",
+    "time": "2026-06-09T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 11,
+    "pricePaise": 39500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 410,
+     "exchange": 13,
+     "sebi": 0,
+     "stamp": 65,
+     "gst": 362,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T040",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-06-12T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 31865,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 180,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T039",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-06-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 14432,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 177,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T077",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-06-16T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 40800,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 384,
+     "exchange": 12,
+     "sebi": 0,
+     "stamp": 61,
+     "gst": 362,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T088",
+    "symbol": "LT",
+    "segment": "EQ",
+    "time": "2026-06-17T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 450000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 2543,
+     "exchange": 80,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 708,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T042",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-06-18T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14968,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 184,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T041",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-06-19T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T094",
+    "symbol": "TATASTEEL",
+    "segment": "EQ",
+    "time": "2026-06-24T09:35:00+05:30",
+    "side": "BUY",
+    "qty": 72,
+    "pricePaise": 15000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 32,
+     "sebi": 1,
+     "stamp": 32,
+     "gst": 366,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T095",
+    "symbol": "TATASTEEL",
+    "segment": "EQ",
+    "time": "2026-06-24T14:55:00+05:30",
+    "side": "SELL",
+    "qty": 72,
+    "pricePaise": 15780,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 284,
+     "exchange": 34,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 366,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T043",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-06-25T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15193,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 186,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T044",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-07-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 218,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T046",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-07-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 13938,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 200,
+     "exchange": 5,
+     "sebi": 0,
+     "stamp": 27,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T048",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-07-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 218,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T045",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-07-07T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 95294,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 211,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T050",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-07-08T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14608,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 210,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T089",
+    "symbol": "BHARTIARTL",
+    "segment": "EQ",
+    "time": "2026-07-08T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 12,
+    "pricePaise": 235000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 3111,
+     "exchange": 84,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 709,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T047",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-07-09T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 217,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T052",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-07-10T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 92985,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 205,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T049",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-07-10T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32588,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 216,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T078",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-07-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 10,
+    "pricePaise": 41500,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 458,
+     "exchange": 12,
+     "sebi": 0,
+     "stamp": 62,
+     "gst": 362,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T082",
+    "symbol": "TATAPOWER",
+    "segment": "EQ",
+    "time": "2026-07-13T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 11,
+    "pricePaise": 40200,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 487,
+     "exchange": 13,
+     "sebi": 0,
+     "stamp": 66,
+     "gst": 362,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T054",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-07-15T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 218,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T051",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-07-15T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 217,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T056",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-07-17T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 217,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T053",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-07-20T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 218,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T058",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-07-21T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 96248,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 212,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T096",
+    "symbol": "ADANIENT",
+    "segment": "EQ",
+    "time": "2026-07-21T10:20:00+05:30",
+    "side": "BUY",
+    "qty": 5,
+    "pricePaise": 250000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 37,
+     "sebi": 1,
+     "stamp": 38,
+     "gst": 367,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T097",
+    "symbol": "ADANIENT",
+    "segment": "EQ",
+    "time": "2026-07-21T15:20:00+05:30",
+    "side": "SELL",
+    "qty": 5,
+    "pricePaise": 259732,
+    "charges": {
+     "brokerage": 7000,
+     "stt": 325,
+     "exchange": 36,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 1267,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T055",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-07-22T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 30942,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 205,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T060",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-07-23T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 31349,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 207,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T057",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-07-24T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 14827,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 213,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T059",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-07-28T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 218,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T061",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-07-30T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32916,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 217,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T062",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-08-03T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 184,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T079",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-08-04T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 26,
+    "pricePaise": 42600,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1037,
+     "exchange": 33,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 699,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T064",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-08-07T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 92290,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 173,
+     "exchange": 5,
+     "sebi": 0,
+     "stamp": 28,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T063",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-08-10T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 14615,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 178,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T090",
+    "symbol": "TITAN",
+    "segment": "EQ",
+    "time": "2026-08-11T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 7,
+    "pricePaise": 467387,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 3065,
+     "exchange": 93,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 711,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T066",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-08-14T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 6,
+    "pricePaise": 32208,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 181,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T065",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-08-17T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 185,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T068",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-08-19T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 184,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T067",
+    "symbol": "ETERNAL",
+    "segment": "EQ",
+    "time": "2026-08-24T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 6,
+    "pricePaise": 32917,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 185,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T083",
+    "symbol": "TATAPOWER",
+    "segment": "EQ",
+    "time": "2026-08-25T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 22,
+    "pricePaise": 41000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 845,
+     "exchange": 27,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 698,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T069",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-08-27T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 14979,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 183,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T070",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-09-01T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 2,
+    "pricePaise": 98750,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 122,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 30,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T098",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-09-02T09:50:00+05:30",
+    "side": "BUY",
+    "qty": 180,
+    "pricePaise": 6000,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 0,
+     "exchange": 32,
+     "sebi": 1,
+     "stamp": 32,
+     "gst": 366,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T099",
+    "symbol": "SUZLON",
+    "segment": "EQ",
+    "time": "2026-09-02T14:30:00+05:30",
+    "side": "SELL",
+    "qty": 180,
+    "pricePaise": 6300,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 284,
+     "exchange": 34,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 366,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T072",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-09-04T10:05:00+05:30",
+    "side": "BUY",
+    "qty": 13,
+    "pricePaise": 14664,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 118,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 29,
+     "gst": 361,
+     "dp": 0
+    }
+   },
+   {
+    "id": "T071",
+    "symbol": "SBIN",
+    "segment": "EQ",
+    "time": "2026-09-07T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 2,
+    "pricePaise": 95886,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 118,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T080",
+    "symbol": "COALINDIA",
+    "segment": "EQ",
+    "time": "2026-09-07T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 26,
+    "pricePaise": 43100,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 691,
+     "exchange": 33,
+     "sebi": 1,
+     "stamp": 0,
+     "gst": 699,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T091",
+    "symbol": "HAL",
+    "segment": "EQ",
+    "time": "2026-09-09T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 4,
+    "pricePaise": 649592,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 1603,
+     "exchange": 74,
+     "sebi": 3,
+     "stamp": 0,
+     "gst": 707,
+     "dp": 1850
+    }
+   },
+   {
+    "id": "T073",
+    "symbol": "IRFC",
+    "segment": "EQ",
+    "time": "2026-09-11T14:40:00+05:30",
+    "side": "SELL",
+    "qty": 13,
+    "pricePaise": 15192,
+    "charges": {
+     "brokerage": 2000,
+     "stt": 122,
+     "exchange": 6,
+     "sebi": 0,
+     "stamp": 0,
+     "gst": 694,
+     "dp": 1850
+    }
+   }
+  ]
+ }
+}
