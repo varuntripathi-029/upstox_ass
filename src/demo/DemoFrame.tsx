@@ -26,7 +26,15 @@ function DemoControls() {
   return (
     <section aria-label="Demo controls" className="mb-3 rounded-xl border border-border bg-upstox-wash/70 px-3 py-2">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-muted">
-        <span className="font-medium tracking-wide text-muted uppercase">Demo controls</span>
+        {/* Leads the bar on its own row, so the controls still fit on one line below it. */}
+        <span className="w-full text-xs sm:whitespace-nowrap">
+          <b className="font-semibold text-upstox-black">Try it →</b>{' '}
+          <span className="text-muted">
+            switch the person, move the date, or open any chip below.
+            {/* The second clause needs the room, so it appears only where it costs no extra line. */}
+            <span className="hidden lg:inline"> Not part of the product — it stands in for logging in.</span>
+          </span>
+        </span>
         <label className="flex items-center gap-1.5">
           <span className="sr-only sm:not-sr-only">Viewing as</span>
           <Select value={persona.id} onValueChange={(v) => setPersona(v as typeof persona.id)} disabled={account}>

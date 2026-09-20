@@ -6,6 +6,7 @@ import type { Day, PortfolioInput, Settings, Trade } from '@/engine/types'
 import { personaById, type Persona, DEFAULT_PERSONA_ID } from '@/sample/personas'
 import { buildInput, initialState, NO_EDITS, todayRange, type DemoEdits, type DemoState, type Intent } from './scenario'
 import { clearSaved, loadSaved, save, type Saved } from './storage'
+import { clearHint } from './hint'
 import { applyLive, loadLive, NO_LIVE, type DataSource, type LiveData } from './live'
 import { recordedInput, RECORDED_SETTINGS } from '@/upstox/account'
 import { useUpstoxConnection, type ConnectionState } from '@/upstox/auth'
@@ -155,6 +156,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
       ),
     resetDemo: () => {
       clearSaved()
+      clearHint()
       setPanel(null)
       setView('holdings')
       setDataSource('sample')

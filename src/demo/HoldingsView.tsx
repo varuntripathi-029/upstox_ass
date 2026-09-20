@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { useDemo, type Panel } from './DemoContext'
 import { IntentGate, useSellPlanning } from './IntentGate'
+import { useFirstRunHint } from './hint'
 import { DemoCard, EstimateNote, inr, PanelButton, pct, signed, Tag } from './ui'
 import { SourceTag } from './DataSource'
 
@@ -36,26 +37,42 @@ const chipStyle: Record<Chip['kind'], string> = {
   LOSS: 'border-uw-band bg-uw-band/60 text-uw-text-2',
 }
 
-function HoldingChip({ h }: { h: HoldingView }) {
+function HoldingChip({ h, hint }: { h: HoldingView; hint?: { show: boolean; dismiss: () => void } }) {
   const planning = useSellPlanning()
   const { openPanel, report } = useDemo()
   if (!h.chip) return null
   const panel = chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0, planning)
   const text = h.chip.kind === 'LOSS' && !panel ? 'Loss · no gains booked this year to cut' : chipText(h.chip)
   const cls = cn('inline-flex max-w-full items-center rounded-full border px-2.5 py-1 text-left text-xs leading-snug font-medium', chipStyle[h.chip.kind])
-  return panel ? (
+  const hinting = !!hint?.show && !!panel
+  if (!panel) return <span className={cls}>{text}</span>
+  const button = (
     <button
       type="button"
-      className={cn(cls, 'cursor-pointer hover:brightness-95')}
+      data-hint={hinting ? 'chip' : undefined}
+      className={cn(cls, 'cursor-pointer hover:brightness-95', hinting && 'animate-pulse ring-2 ring-uw-purple ring-offset-2')}
       onClick={(e) => {
         e.stopPropagation()
+        hint?.dismiss()
         openPanel(panel)
       }}
     >
       {text}
     </button>
+  )
+  // The label is absolutely positioned and non-interactive, so nothing moves when it appears.
+  return hinting ? (
+    <span className="relative inline-flex max-w-full">
+      {button}
+      <span
+        role="tooltip"
+        className="pointer-events-none absolute -top-6 left-0 z-10 rounded-md bg-uw-text px-2 py-0.5 text-[0.625rem] font-medium whitespace-nowrap text-white shadow-card"
+      >
+        Click any chip
+      </span>
+    </span>
   ) : (
-    <span className={cls}>{text}</span>
+    button
   )
 }
 
@@ -71,8 +88,14 @@ function PnL({ value, cost }: { value: number; cost: number }) {
 function HoldingsTable() {
   const { report, openPanel, setView } = useDemo()
   const planning = useSellPlanning()
+  const hint = useFirstRunHint()
+  // Hint the first chip that actually opens something: while "just looking" the top row may be inert.
+  const hintIndex = report.holdings
+    .filter((h) => !isMfClass(h.assetClass))
+    .findIndex((h) => chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0, planning) !== null)
   const stocks = report.holdings.filter((h) => !isMfClass(h.assetClass))
   const open = (h: HoldingView) => {
+    hint.dismiss()
     const p = chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0, planning)
     if (p) openPanel(p)
   }
@@ -114,7 +137,7 @@ function HoldingsTable() {
             </tr>
           </thead>
           <tbody>
-            {stocks.map((h) => (
+            {stocks.map((h, i) => (
               <tr
                 key={h.symbol}
                 onClick={() => open(h)}
@@ -123,7 +146,7 @@ function HoldingsTable() {
                 <td className="px-4 py-3">
                   <div className="font-medium text-uw-text">{h.symbol}</div>
                   <div className="mb-1.5 text-xs text-uw-text-2">{h.name}</div>
-                  <HoldingChip h={h} />
+                  <HoldingChip h={h} hint={i === hintIndex ? hint : undefined} />
                 </td>
                 <td className="px-3 py-3 text-right">{h.qty}</td>
                 <td className="px-3 py-3 text-right">{formatINRPaise(h.avgCost)}</td>
@@ -139,7 +162,7 @@ function HoldingsTable() {
       </div>
       {/* Phone: cards */}
       <ul className="flex flex-col gap-2 md:hidden" aria-label="Holdings">
-        {stocks.map((h) => (
+        {stocks.map((h, i) => (
           <li key={h.symbol} className="rounded-uw-card border border-uw-band bg-white p-4 shadow-card">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
@@ -154,7 +177,7 @@ function HoldingsTable() {
               </div>
             </div>
             <div className="mt-2">
-              <HoldingChip h={h} />
+              <HoldingChip h={h} hint={i === hintIndex ? hint : undefined} />
             </div>
           </li>
         ))}
@@ -210,7 +233,14 @@ function Timeline() {
                   </span>
                 )}
                 <span className="ml-1 text-uw-text-2">
-                  {l.gain < 0 ? `· loss ${inr(-l.gain)}` : l.savingByWaiting > 0 ? `· save ${inr(l.savingByWaiting)}` : !l.longTerm && l.taxToday <= 0 ? '· no tax either way' : `· gain ${inr(l.gain)}`}
+                  {/* Neutral, like the chips (PRODUCT.md §5.1): a tax difference, not advice to hold. */}
+                  {l.gain < 0
+                    ? `· loss ${inr(-l.gain)}`
+                    : l.savingByWaiting > 0
+                      ? `· ${inr(l.savingByWaiting)} less tax if sold after that`
+                      : !l.longTerm && l.taxToday <= 0
+                        ? '· no tax either way'
+                        : `· gain ${inr(l.gain)}`}
                 </span>
               </div>
             </div>

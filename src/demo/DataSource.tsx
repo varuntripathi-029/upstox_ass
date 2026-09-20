@@ -16,9 +16,9 @@ const OPTIONS: { id: DataSource; label: string; hint: string }[] = [
 export function DataSourceSwitch() {
   const { dataSource, setDataSource, liveLoading, connection } = useDemo()
   return (
-    <div className="flex flex-col gap-1">
-      <span className="text-xs font-medium text-muted">Data source</span>
-      <div role="radiogroup" aria-label="Data source" className="flex flex-wrap gap-1 rounded-lg bg-white p-1 shadow-card">
+    <div className="flex items-center gap-1.5">
+      <span className="sr-only lg:not-sr-only lg:text-xs lg:font-medium lg:text-muted">Data source</span>
+      <div role="radiogroup" aria-label="Data source" className="flex flex-wrap gap-1 rounded-lg bg-white p-0.5 shadow-card">
         {OPTIONS.map((o) => (
           <Tooltip key={o.id}>
             <TooltipTrigger asChild>
@@ -28,7 +28,7 @@ export function DataSourceSwitch() {
                 aria-checked={dataSource === o.id}
                 onClick={() => setDataSource(o.id)}
                 className={cn(
-                  'cursor-pointer rounded-md px-3 py-1.5 text-xs font-medium transition',
+                  'cursor-pointer rounded-md px-2.5 py-1 text-xs font-medium transition',
                   dataSource === o.id ? 'bg-upstox-purple text-white' : 'text-upstox-black hover:bg-upstox-wash',
                 )}
               >
