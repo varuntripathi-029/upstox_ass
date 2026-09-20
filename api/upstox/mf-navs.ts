@@ -6,7 +6,7 @@ import { pickMfNavs } from '../../src/upstox/filter'
 import type { UpstoxMfInstrument } from '../../src/upstox/types'
 import { ASSETS, badRequest, CACHE_NAVS, fetchJsonGz, json, listParam, upstream } from '../_lib/upstox'
 
-export async function GET(request: Request): Promise<Response> {
+export default async function (request: Request): Promise<Response> {
   const isins = listParam(new URL(request.url), 'isins', 25)
   if (!isins.length) return badRequest('Pass ?isins=ISIN1,ISIN2 (up to 25).')
   try {

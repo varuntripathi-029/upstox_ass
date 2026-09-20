@@ -1,6 +1,7 @@
 // Server-side helpers for the Upstox calls (Vercel Node functions, TECH.md §4).
 // The Analytics Token never reaches the browser: it is read from the environment here only.
 import { gunzipSync } from 'node:zlib'
+import { readSession } from './session'
 
 export const UPSTOX_API = 'https://api.upstox.com'
 export const ASSETS = 'https://assets.upstox.com/market-quote/instruments/exchange'
@@ -18,12 +19,12 @@ export function json(body: unknown, opts: { status?: number; cache?: string } = 
   })
 }
 
-/** 501 when no Analytics Token is configured: the UI falls back to cached values. */
+/** 501 when there is neither a session nor an Analytics Token: the UI falls back to cached values. */
 export const notConfigured = (what: string) =>
   json(
     {
       status: 'not_configured',
-      message: `${what} needs an Upstox Analytics Token. Set UPSTOX_ANALYTICS_TOKEN to enable it; the demo falls back to cached values.`,
+      message: `${what} needs a connected Upstox session or an Analytics Token (UPSTOX_ANALYTICS_TOKEN); the demo falls back to cached values.`,
     },
     { status: 501 },
   )
@@ -39,8 +40,24 @@ export const analyticsToken = (): string | null => {
   return token
 }
 
+export type TokenSource = 'session' | 'analytics'
+
+/**
+ * Token priority for the market endpoints (TECH.md §3): the logged-in session first, because a user
+ * token covers these APIs too, then the optional Analytics Token, then nothing — and "nothing" means
+ * the route answers 501 and the UI keeps its cached values. Neither token ever leaves the server.
+ */
+export async function tokenFor(request: Request): Promise<{ token: string; source: TokenSource } | null> {
+  const session = await readSession(request)
+  if (session) return { token: session.accessToken, source: 'session' }
+  const token = analyticsToken()
+  return token ? { token, source: 'analytics' } : null
+}
+
 /** GET an Upstox API path with the Analytics Token (read-only, GET APIs only). */
 export async function upstoxGet<T>(path: string, token: string): Promise<{ ok: true; data: T } | { ok: false; status: number; body: string }> {
+  // `token` is used here and nowhere else: it is never logged and never included in a response.
+
   const res = await fetch(`${UPSTOX_API}${path}`, {
     headers: { Accept: 'application/json', Authorization: `Bearer ${token}` },
   })

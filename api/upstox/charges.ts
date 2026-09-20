@@ -2,9 +2,9 @@
 // Brokerage API (GET /v2/charges/brokerage): the real cost of selling and buying back, for the harvest panel.
 // Charges needs no static IP with an Analytics Token. Without a token: 501, and the UI estimates from the user's own orders.
 import type { UpstoxBrokerageResponse } from '../../src/upstox/types'
-import { analyticsToken, badRequest, CACHE_QUOTES, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox'
+import { tokenFor, badRequest, CACHE_QUOTES, json, notConfigured, upstoxGet, upstream } from '../_lib/upstox'
 
-export async function GET(request: Request): Promise<Response> {
+export default async function (request: Request): Promise<Response> {
   const q = new URL(request.url).searchParams
   const instrument = q.get('instrument_token')
   const quantity = Number(q.get('quantity'))
@@ -15,10 +15,10 @@ export async function GET(request: Request): Promise<Response> {
     return badRequest('Pass instrument_token, quantity (>0), price (>0), product (D|I), transaction_type (BUY|SELL).')
   }
   if (!['D', 'I'].includes(product) || !['BUY', 'SELL'].includes(side)) return badRequest('product must be D or I; transaction_type must be BUY or SELL.')
-  const token = analyticsToken()
-  if (!token) return notConfigured('Real charges (Brokerage API)')
+  const auth = await tokenFor(request)
+  if (!auth) return notConfigured('Real charges (Brokerage API)')
   const path = `/v2/charges/brokerage?instrument_token=${encodeURIComponent(instrument)}&quantity=${quantity}&product=${product}&transaction_type=${side}&price=${price}`
-  const res = await upstoxGet<UpstoxBrokerageResponse>(path, token)
+  const res = await upstoxGet<UpstoxBrokerageResponse>(path, auth.token)
   if (!res.ok) return upstream(`Brokerage API failed (HTTP ${res.status}).`)
   const c = res.data.data.charges
   return json(

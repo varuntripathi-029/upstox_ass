@@ -16,11 +16,11 @@ export function apiDev(): Plugin {
         const match = url.pathname.match(/^\/api\/upstox\/([\w-]+)$/)
         if (!match || !routes.has(match[1])) return next()
         try {
-          const mod = (await server.ssrLoadModule(`/api/upstox/${match[1]}.ts`)) as { GET: (r: Request) => Promise<Response> }
+          const mod = (await server.ssrLoadModule(`/api/upstox/${match[1]}.ts`)) as { default: (r: Request) => Promise<Response> }
           const headers = Object.fromEntries(
             Object.entries(req.headers).map(([k, v]) => [k, Array.isArray(v) ? v.join(',') : String(v ?? '')]),
           )
-          const response = await mod.GET(new Request(`http://localhost${req.url}`, { headers }))
+          const response = await mod.default(new Request(`http://localhost${req.url}`, { headers }))
           res.statusCode = response.status
           response.headers.forEach((v, k) => res.setHeader(k, v))
           res.end(await response.text())

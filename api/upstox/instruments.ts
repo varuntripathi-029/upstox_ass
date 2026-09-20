@@ -5,7 +5,7 @@ import { pickInstruments } from '../../src/upstox/filter'
 import type { UpstoxNseInstrument } from '../../src/upstox/types'
 import { ASSETS, badRequest, CACHE_INSTRUMENTS, fetchJsonGz, json, listParam, upstream } from '../_lib/upstox'
 
-export async function GET(request: Request): Promise<Response> {
+export default async function (request: Request): Promise<Response> {
   const isins = listParam(new URL(request.url), 'isins', 50)
   if (!isins.length) return badRequest('Pass ?isins=ISIN1,ISIN2 (up to 50).')
   try {
