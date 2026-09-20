@@ -14,6 +14,7 @@ const sourceLabel = {
   sample: 'Sample data',
   live: 'Sample data + live Upstox prices',
   account: 'Demo account (recorded API responses)',
+  connected: 'Connect Upstox (live)',
 } as const
 import { DemoCard, EstimateNote, inr, PanelButton, pct, SampleBadge, Tag } from './ui'
 

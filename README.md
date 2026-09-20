@@ -63,7 +63,7 @@ You can also change **today's date**, edit the settings (income, regime, other g
 
 ## About the APIs
 
-**There is no login in this project, by design.** A personal Upstox developer app only lets the **app owner** log in, and the owner has no active demat account — OAuth would add a login button no reviewer could use. So the demo has three data sources, switchable in the UI, and the one a production build inside Upstox would use (the logged-in session) is the only part that would change.
+The app supports multiple data sources, switchable in the UI:
 
 **1. Live now, no token.** Two public Upstox instrument files, downloaded, gunzipped and filtered **server-side** (they are megabytes; only the demo's rows reach the browser):
 
@@ -72,7 +72,7 @@ You can also change **today's date**, edit the settings (income, regime, other g
 | Current NAV and `scheme_type` (EQUITY / ELSS / DEBT) per fund | `assets.upstox.com/…/mf-instruments.json.gz` |
 | `instrument_key`, ISIN, trading symbol, tick size | `assets.upstox.com/…/NSE.json.gz` |
 
-**2. Live with an optional Analytics Token** (read-only, GET-only; none of these need a static IP):
+**2. Live with an optional Analytics Token or Session Login** (read-only, GET-only; none of these need a static IP):
 
 | Purpose | Endpoint |
 |---|---|
@@ -81,9 +81,19 @@ You can also change **today's date**, edit the settings (income, regime, other g
 | 31-Jan-2018 price for grandfathered cost | `GET /v3/historical-candle/{key}/days/1/{to}/{from}` |
 | Splits, bonuses, dividends | `GET /v2/fundamentals/{isin}/corporate-actions` |
 
-Without the token these four routes answer **501** and the UI falls back silently to cached values, tagged *"Using cached values"*.
+Without a token these four routes answer **501** and the UI falls back silently to cached values, tagged *"Using cached values"*.
 
-**3. Recorded responses** for the account APIs we cannot call without a login — the values are ours, the **shapes and the mapping code are the real ones**: `GET /v2/portfolio/long-term-holdings`, `/v2/charges/historical-trades` (equity and MF), `/v2/trade/profit-loss/charges`, `/v2/trade/profit-loss/data`, `/v2/mf/holdings`, `/v2/mf/sips`.
+**3. Account APIs (Recorded or Live via OAuth)**:
+Because this is a **personal developer app**, OAuth login is limited to the app owner only. Additionally, because the owner's demat account is inactive (returns empty), the app gracefully handles empty states by displaying the sample data below an empty-state warning. The recorded responses ensure the demo works without login using the exact real mapping code:
+
+| Purpose | Endpoint |
+|---|---|
+| Holdings | `GET /v2/portfolio/long-term-holdings` |
+| Trade history incl. MF (3 FYs) | `GET /v2/charges/historical-trades?segment=EQ\|FO\|COM\|CD\|MF` |
+| Realized P&L | `GET /v2/trade/profit-loss/data` |
+| Trade charges | `GET /v2/trade/profit-loss/charges` |
+| MF holdings & SIPs | `GET /v2/mf/holdings`, `GET /v2/mf/sips` |
+
 
 Two things worth knowing, both verified against the docs and handled in the mapping:
 

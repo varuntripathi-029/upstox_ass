@@ -10,10 +10,11 @@ const OPTIONS: { id: DataSource; label: string; hint: string }[] = [
   { id: 'sample', label: 'Sample', hint: 'Bundled seed data. Every §10 figure is exact.' },
   { id: 'live', label: 'Sample + live Upstox prices', hint: 'Same trades, with current NAVs from the Upstox MF instrument file (no token) and live prices when an Analytics Token is set.' },
   { id: 'account', label: 'Demo account (recorded API responses)', hint: 'Recorded Upstox responses (holdings, trade history, charges, P&L, MF) mapped by the same code a live call uses.' },
+  { id: 'connected', label: 'Connect Upstox (live)', hint: 'Live data from the connected Upstox account.' },
 ]
 
 export function DataSourceSwitch() {
-  const { dataSource, setDataSource, liveLoading } = useDemo()
+  const { dataSource, setDataSource, liveLoading, connection } = useDemo()
   return (
     <div className="flex flex-col gap-1">
       <span className="text-xs font-medium text-muted">Data source</span>
@@ -40,6 +41,49 @@ export function DataSourceSwitch() {
           </Tooltip>
         ))}
       </div>
+      {dataSource === 'connected' && (
+        <div className="mt-2 rounded-lg border border-uw-band bg-upstox-wash p-3 text-sm">
+          {connection.status === 'loading' && <p>Checking connection...</p>}
+          {(connection.status === 'not_connected' || connection.status === 'expired') && (
+            <div>
+              {connection.status === 'expired' && <p className="mb-2 text-red-600 font-medium">Session expired, please reconnect.</p>}
+              <a href="/api/auth/login" className="inline-block rounded-md bg-upstox-purple px-4 py-2 font-medium text-white hover:bg-upstox-purple/90">
+                Connect Upstox
+              </a>
+              <p className="mt-2 text-xs text-upstox-black/70">
+                This is a personal developer app. Only the app owner can log in. Other users require multi-client approval from Upstox.
+              </p>
+            </div>
+          )}
+          {connection.status === 'error' && (
+            <div className="text-red-600">
+              <p className="font-medium">Connection error</p>
+              <p className="text-xs">{connection.message}</p>
+              <a href="/api/auth/login" className="mt-2 inline-block text-xs font-medium underline">Try again</a>
+            </div>
+          )}
+          {connection.status === 'connected' && (
+            <div>
+              <div className="flex items-center justify-between">
+                <p className="font-medium text-upstox-black">
+                  Connected as <span className="text-upstox-purple">{connection.name || 'User'}</span>
+                </p>
+                <a href="/api/auth/logout" className="text-xs text-upstox-black/60 hover:underline">Disconnect</a>
+              </div>
+              {connection.expiresAt && (
+                <p className="text-xs text-upstox-black/60">
+                  Session expires at {new Date(connection.expiresAt).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Kolkata' })} IST
+                </p>
+              )}
+              {connection.isEmpty && (
+                <p className="mt-2 text-xs text-orange-600 font-medium">
+                  No holdings or trades in this account yet. Showing sample data.
+                </p>
+              )}
+            </div>
+          )}
+        </div>
+      )}
     </div>
   )
 }

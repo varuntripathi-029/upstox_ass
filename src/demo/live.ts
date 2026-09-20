@@ -4,7 +4,7 @@ import type { PortfolioInput } from '@/engine/types'
 import { fetchInstruments, fetchLtp, fetchMfNavs, type LiveState } from '@/upstox/client'
 import { isMfClass } from '@/engine/mf'
 
-export type DataSource = 'sample' | 'live' | 'account'
+export type DataSource = 'sample' | 'live' | 'account' | 'connected'
 
 export interface LiveData {
   /** NAV per fund ISIN (public MF instrument file, no token) */

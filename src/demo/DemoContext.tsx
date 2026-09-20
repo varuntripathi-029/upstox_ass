@@ -8,6 +8,8 @@ import { buildInput, initialState, NO_EDITS, todayRange, type DemoEdits, type De
 import { clearSaved, loadSaved, save, type Saved } from './storage'
 import { applyLive, loadLive, NO_LIVE, type DataSource, type LiveData } from './live'
 import { recordedInput, RECORDED_SETTINGS } from '@/upstox/account'
+import { useUpstoxConnection, type ConnectionState } from '@/upstox/auth'
+import { mapAccount } from '@/upstox/map'
 
 export type Panel =
   | { kind: 'wait'; symbol: string; lotIndex: number }
@@ -33,6 +35,7 @@ interface DemoContextValue {
   live: LiveData
   /** true while a live fetch is in flight */
   liveLoading: boolean
+  connection: ConnectionState
   edited: boolean
   view: View
   setView: (v: View) => void
@@ -72,13 +75,19 @@ export function DemoProvider({ children }: { children: ReactNode }) {
   const [dataSource, setDataSource] = useState<DataSource>('sample')
   const [live, setLive] = useState<LiveData>(NO_LIVE)
   const [liveLoading, setLiveLoading] = useState(false)
+  const connection = useUpstoxConnection()
   const [accountSettings, setAccountSettings] = useState(RECORDED_SETTINGS)
 
   useEffect(() => save(saved), [saved])
 
   // The demo account is built from recorded Upstox responses through the same mapping a live call uses.
-  const seed = useMemo(() => (dataSource === 'account' ? recordedInput() : buildInput(state)), [dataSource, state])
-  const settings = dataSource === 'account' ? accountSettings : state.settings
+  const seed = useMemo(() => {
+    if (dataSource === 'connected' && connection.status === 'connected') {
+      return connection.isEmpty ? buildInput(state) : mapAccount(connection.data)
+    }
+    return dataSource === 'account' ? recordedInput() : buildInput(state)
+  }, [dataSource, state, connection])
+  const settings = (dataSource === 'account' || (dataSource === 'connected' && connection.status === 'connected' && !connection.isEmpty)) ? accountSettings : state.settings
   const input = useMemo(() => (dataSource === 'live' ? applyLive(seed, live) : seed), [seed, live, dataSource])
   const report = useMemo(() => analyze(input, settings), [input, settings])
 
@@ -115,6 +124,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
     setDataSource,
     live,
     liveLoading,
+    connection,
     edited: state.edits.added.length + state.edits.removedIds.length > 0,
     view,
     setView,
