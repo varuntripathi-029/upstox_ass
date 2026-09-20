@@ -29,6 +29,12 @@ export function useUpstoxConnection(): ConnectionState {
         }
 
         const portRes = await fetch('/api/portfolio')
+        if (portRes.status === 401) {
+          // No session or the 3:30 AM IST expiry: ask for a reconnect rather than showing an error.
+          const body = await portRes.json().catch(() => ({}))
+          if (!cancelled) setState({ status: body.status === 'expired' ? 'expired' : 'not_connected' })
+          return
+        }
         if (!portRes.ok) {
           if (!cancelled) setState({ status: 'error', message: 'Failed to fetch portfolio' })
           return

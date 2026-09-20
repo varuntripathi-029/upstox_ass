@@ -80,4 +80,6 @@ export function listParam(url: URL, name: string, max = 50): string[] {
 }
 
 export const badRequest = (message: string) => json({ status: 'error', message }, { status: 400 })
+/** 401: no session, or the Upstox token died at 3:30 AM IST. The UI shows "reconnect", never an error page. */
+export const unauthorized = (status: 'no_session' | 'expired', message: string) => json({ status, message }, { status: 401 })
 export const upstream = (message: string) => json({ status: 'error', message }, { status: 502 })

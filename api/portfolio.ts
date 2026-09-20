@@ -1,20 +1,24 @@
 import { readSession } from './_lib/session.js'
-import { upstoxGet, json, badRequest } from './_lib/upstox.js'
+import { upstoxGet, json, unauthorized } from './_lib/upstox.js'
 
 export async function GET(request: Request): Promise<Response> {
   const session = await readSession(request)
   if (!session) {
-    return badRequest('Not authenticated')
+    // No session, or it expired at 3:30 AM IST: 401 tells the UI to offer "reconnect".
+    return unauthorized('no_session', 'Not authenticated. Connect Upstox to load this account.')
   }
 
   const token = session.accessToken
 
-  // Helper to fetch with a default empty shape if the API returns 404/400 due to no demat account
-  const fetchSafe = async (path: string, defaultData: any) => {
-    const res = await upstoxGet(path, token)
+  // An account with no holdings or trades is not an error: those calls answer 404/400 and we keep the
+  // empty shape so the UI can show a correct empty state. A 401 means the token died, and that one
+  // does have to reach the user as "reconnect".
+  let expired = false
+  const fetchSafe = async <T,>(path: string, defaultData: T): Promise<T> => {
+    const res = await upstoxGet<T>(path, token)
     if (res.ok) return res.data
-    // If the account has no trades/holdings, Upstox might return 404 or 400.
-    console.warn(`Upstox API ${path} returned ${res.status}: ${res.body}`)
+    if (res.status === 401) expired = true
+    console.warn(`upstox ${path} -> ${res.status}`) // status only: never the token, never the body
     return defaultData
   }
 
@@ -39,6 +43,8 @@ export async function GET(request: Request): Promise<Response> {
     fetchSafe('/v2/trade/profit-loss/charges?segment=EQ&financial_year=2526', { data: { charges_breakdown: {} } }),
     fetchSafe('/v2/trade/profit-loss/charges?segment=EQ&financial_year=2627', { data: { charges_breakdown: {} } }),
   ])
+
+  if (expired) return unauthorized('expired', 'Session expired, reconnect.')
 
   // Assemble into the AccountResponses shape the frontend expects
   const portfolio = {
