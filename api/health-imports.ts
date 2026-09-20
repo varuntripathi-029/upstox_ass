@@ -1,5 +1,5 @@
-// Temporary probe: same web signature, but importing what the real routes import. If /api/health works
-// and this one 500s, the failure is in bundling _lib or src/, not in the runtime.
+// Temporary probe: named web handler with EXTENSIONLESS relative imports. Under "type": "module" these
+// resolve in the bundler but not in Node at runtime, so a 500 here means the specifiers are the problem.
 import { json } from './_lib/upstox'
 import { pickMfNavs } from '../src/upstox/filter'
 
