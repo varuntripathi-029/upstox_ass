@@ -16,10 +16,13 @@ export async function GET(request: Request): Promise<Response> {
   let expired = false
   const fetchSafe = async <T,>(path: string, defaultData: T): Promise<T> => {
     const res = await upstoxGet<T>(path, token)
-    if (res.ok) return res.data
-    if (res.status === 401) expired = true
-    console.warn(`upstox ${path} -> ${res.status}`) // status only: never the token, never the body
-    return defaultData
+    // upstoxGet returns a discriminated union; the failure branch is the only place status/body exist.
+    if (!res.ok) {
+      if (res.status === 401) expired = true
+      console.warn(`upstox ${path} -> ${res.status}`) // status only: never the token, never the body
+      return defaultData
+    }
+    return res.data
   }
 
   // To keep the function simple and under Vercel limits, we fetch the first page of trades.

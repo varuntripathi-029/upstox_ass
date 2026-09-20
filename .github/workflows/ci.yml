@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24.x
+          cache: npm
+      - run: npm ci
+      # Covers src/, api/ and the vite config: tsconfig.json references all three projects.
+      - run: npm run typecheck
+      # The serverless functions the way Vercel compiles them: its builder reads the root tsconfig's
+      # compilerOptions only, so this catches a missing "types": ["node"] before a deploy fails.
+      - name: Typecheck api/ the way Vercel does
+        run: |
+          npx tsc --ignoreConfig --noEmit --skipLibCheck --strict \
+            --target es2023 --lib ES2023,DOM --types node \
+            --module esnext --moduleResolution bundler \
+            $(find api -name '*.ts' ! -name '*.test.ts')
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build

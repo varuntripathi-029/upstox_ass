@@ -302,14 +302,20 @@ function HowItWorks() {
           <h3 className="font-semibold text-upstox-black">1 · Upstox data (read-only)</h3>
           <p className="mt-2 text-xs font-semibold text-gain-ink">Live now, no token</p>
           {apiList(live)}
-          <p className="mt-3 text-xs font-semibold text-upstox-purple">Live with an Analytics Token (optional)</p>
+          <p className="mt-3 text-xs font-semibold text-upstox-purple">Live once you connect Upstox (or with an optional Analytics Token)</p>
           {apiList(token)}
           <p className="mt-3 text-xs font-semibold text-charge-ink">Recorded responses (account APIs)</p>
           {apiList(recorded)}
-          <p className="mt-3 rounded-xl border border-warn-border bg-warn-bg p-3 text-xs text-warn-ink">
-            <b>Why there’s no login:</b> a personal Upstox app only lets the app owner log in, and this owner has no active demat account, so the account APIs would
-            return nothing. Those five are therefore recorded responses in the documented shapes, mapped by the same code a live call uses. In production this would
-            run inside Upstox on the logged-in session, and only the fetching would change.
+          <p className="mt-3 rounded-xl border border-border bg-upstox-wash p-3 text-xs text-muted">
+            <b className="text-upstox-black">No token needed.</b> The default state is no credentials at all: NAVs and instrument data come from the two public
+            files, and the four market endpoints simply answer 501, so those numbers keep their last cached values with a small “Using cached values” tag. Nothing
+            breaks and nothing warns. <b className="text-upstox-black">Connect Upstox</b> signs you in with OAuth and the session token then covers those four as
+            well; an Analytics Token does the same server-side if you prefer no login. Either way the token stays in the serverless function.
+          </p>
+          <p className="mt-2 rounded-xl border border-warn-border bg-warn-bg p-3 text-xs text-warn-ink">
+            <b>Why the account APIs are recorded:</b> this is a personal Upstox app, so only the app owner can log in (other users need multi-client approval), and
+            that owner has no active demat account, so those five calls return nothing. They are recorded responses in the documented shapes, mapped by the same
+            code a live call uses. In production this would run inside Upstox on the logged-in session, and only the fetching would change.
           </p>
         </div>
         <ArrowRight className="mx-auto hidden size-6 self-center text-upstox-purple lg:block" aria-hidden />

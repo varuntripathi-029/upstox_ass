@@ -72,7 +72,7 @@ The app supports multiple data sources, switchable in the UI:
 | Current NAV and `scheme_type` (EQUITY / ELSS / DEBT) per fund | `assets.upstox.com/…/mf-instruments.json.gz` |
 | `instrument_key`, ISIN, trading symbol, tick size | `assets.upstox.com/…/NSE.json.gz` |
 
-**2. Live with an optional Analytics Token or Session Login** (read-only, GET-only; none of these need a static IP):
+**2. Live once someone connects Upstox — or, optionally, with an Analytics Token** (read-only, GET-only; none of these need a static IP). **No credential is required to run this project:** with neither a session nor a token these four answer `501` and the UI keeps its cached values, tagged *"Using cached values"*. That is the normal state, not an error:
 
 | Purpose | Endpoint |
 |---|---|
@@ -81,7 +81,7 @@ The app supports multiple data sources, switchable in the UI:
 | 31-Jan-2018 price for grandfathered cost | `GET /v3/historical-candle/{key}/days/1/{to}/{from}` |
 | Splits, bonuses, dividends | `GET /v2/fundamentals/{isin}/corporate-actions` |
 
-Without a token these four routes answer **501** and the UI falls back silently to cached values, tagged *"Using cached values"*.
+A logged-in session (**Connect Upstox**) covers all four, because a user token works on these endpoints too. `UPSTOX_ANALYTICS_TOKEN` is the server-side alternative when nobody logs in. Set neither and the demo still works end to end.
 
 **3. Account APIs (Recorded or Live via OAuth)**:
 Because this is a **personal developer app**, OAuth login is limited to the app owner only. Additionally, because the owner's demat account is inactive (returns empty), the app gracefully handles empty states by displaying the sample data below an empty-state warning. The recorded responses ensure the demo works without login using the exact real mapping code:
@@ -128,9 +128,12 @@ Node 24.x (see `engines`). Deploys to Vercel as a plain Vite app; `vercel.json` 
 cp .env.example .env.local   # git-ignored
 ```
 
-One optional variable, `UPSTOX_ANALYTICS_TOKEN`. Leave it empty and everything still works: sample data, plus live NAVs and instrument data from the public files. Paste a read-only Analytics Token (Upstox Developer Apps → Analytics) to also enable live prices, brokerage, the 2018 candle and corporate actions.
+Every variable is optional, and the deployed demo runs with **none of them set**: sample data plus live NAVs and instrument data from the public Upstox files. The four market endpoints answer `501` and the UI shows cached values — expected behaviour, no warning, no empty screen.
 
-On Vercel: Settings → Environment Variables → add `UPSTOX_ANALYTICS_TOKEN` → redeploy.
+- `UPSTOX_CLIENT_ID`, `UPSTOX_CLIENT_SECRET`, `UPSTOX_REDIRECT_URI`, `SESSION_SECRET` enable **Connect Upstox** (OAuth). A logged-in session also makes prices, brokerage, the 2018 candle and corporate actions live. Login only works for the app owner: a personal Upstox app is owner-only, and other users would need multi-client approval.
+- `UPSTOX_ANALYTICS_TOKEN` is the no-login alternative for those same four endpoints. It is never required.
+
+On Vercel: Settings → Environment Variables → add what you want → redeploy.
 
 ## Layout
 

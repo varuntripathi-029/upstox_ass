@@ -1,8 +1,22 @@
 {
   "files": [],
-  "compilerOptions": { "paths": { "@/*": ["./src/*"] } },
+  /* These options are also what Vercel's function builder reads when it compiles api/*.ts on its own,
+     so they have to be usable on their own: Node globals and the web types the handlers use. Leaving
+     them out is what broke the deploy (TS2591 "Cannot find name 'process'"). */
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["ES2023", "DOM"],
+    "types": ["node"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "paths": { "@/*": ["./src/*"] }
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.api.json" },
     { "path": "./tsconfig.node.json" }
   ]
 }
