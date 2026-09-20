@@ -2,7 +2,7 @@
 // The first long-term day is the day after the 12-month (calendar) anniversary of the buy date.
 import { describe, expect, it } from 'vitest'
 import { analyze } from '../analyze'
-import { chipText, GAIN_HARVEST_NOTE, KEEP_NOTE, lossPanel, POSITIONING, profitTakeaway, UPSTOX_TLH_URL, waitPanel } from '../copy'
+import { chipText, GAIN_HARVEST_NOTE, KEEP_NOTE, lossPanel, LOSS_TRADEOFF, POSITIONING, profitTakeaway, UPSTOX_TLH_URL, waitPanel } from '../copy'
 import { longTermFrom } from '../dates'
 import { samplePortfolio, sampleSettings } from '../../sample/portfolio'
 import { portfolio, rs, salaried, trade } from './helpers'
@@ -51,18 +51,21 @@ describe('chip and panel copy use the first long-term day', () => {
   const r = analyze(samplePortfolio, sampleSettings)
   const chip = (s: string) => chipText(r.holdings.find((h) => h.symbol === s)!.chip!)
   it('holdings chips', () => {
-    expect(chip('INFY')).toBe('⏳ 23 days to long-term · long-term from 11 Oct · wait and save ₹1,872')
-    expect(chip('TATAMOTORS')).toBe('⏳ 110 days to long-term · long-term from 6 Jan · save ₹874')
-    expect(chip('NIFTYBEES')).toBe('⏳ 177 days to long-term · long-term from 14 Mar · save ₹541')
-    expect(chip('ITC')).toBe("Loss · can cut this year's tax by ₹229")
-    expect(chip('HDFCBANK')).toBe('Long-term · ₹31,400 can be booked tax-free')
+    // Neutral wording (PRODUCT.md §5.1): a timing fact and its tax consequence at today's price,
+    // never "wait and save", which would read as advice to hold.
+    expect(chip('INFY')).toBe('⏳ Becomes long-term in 23 days (11 Oct) · selling after that could mean ₹1,872 less tax at today’s price')
+    expect(chip('TATAMOTORS')).toBe('⏳ Becomes long-term in 110 days (6 Jan) · selling after that could mean ₹874 less tax at today’s price')
+    expect(chip('NIFTYBEES')).toBe('⏳ Becomes long-term in 177 days (14 Mar) · selling after that could mean ₹541 less tax at today’s price')
+    expect(chip('ITC')).toBe('Loss · realizing it could offset eligible gains (about ₹229 less tax)')
+    expect(chip('HDFCBANK')).toBe('Long-term · ₹31,400 of gain sits inside this year’s tax-free limit')
   })
   it('wait panel: sell on or after the first long-term day', () => {
     expect(waitPanel(r.strategies.waitForLongTerm[0])).toEqual({
-      headline: 'Wait 23 days, save ₹1,872',
+      headline: 'Becomes long-term in 23 days, on 11 Oct 2026',
       today: 'Sell today: ₹1,872 short-term tax',
       later: 'Sell on or after 11 Oct 2026: ₹0 tax',
       remind: 'Remind me on 11 Oct 2026',
+      assumption: 'Estimated tax could be ₹1,872 lower after that date. Assumes the price stays where it is today. Not investment advice.',
     })
   })
   it('sample days held match PRODUCT.md §10 (343 / 302 / 256 / 189 / 410)', () => {
@@ -79,8 +82,10 @@ describe('chip and panel copy use the first long-term day', () => {
 
 describe('copy', () => {
   it('says "1 day", not "1 days"', () => {
-    expect(chipText({ kind: 'WAIT', days: 1, date: '2026-10-11', saving: 187200 })).toBe('⏳ 1 day to long-term · long-term from 11 Oct · wait and save ₹1,872')
-    expect(waitPanel({ symbol: 'INFY', days: 1, date: '2026-10-11', gain: 0, taxToday: 0, taxOnDate: 0, saving: 187200 }).headline).toBe('Wait 1 day, save ₹1,872')
+    expect(chipText({ kind: 'WAIT', days: 1, date: '2026-10-11', saving: 187200 })).toBe('⏳ Becomes long-term in 1 day (11 Oct) · selling after that could mean ₹1,872 less tax at today’s price')
+    expect(waitPanel({ symbol: 'INFY', days: 1, date: '2026-10-11', gain: 0, taxToday: 0, taxOnDate: 0, saving: 187200 }).headline).toBe(
+      'Becomes long-term in 1 day, on 11 Oct 2026',
+    )
   })
 })
 
@@ -94,14 +99,16 @@ describe('building on Upstox tax-loss harvesting', () => {
   const r = analyze(samplePortfolio, sampleSettings)
   it('the loss panel shows the ₹ figure and hands off to Upstox TLH', () => {
     expect(lossPanel(r.strategies.lossHarvest)).toMatchObject({
-      title: '₹1,100 of losses could cut this year’s tax by ₹229',
+      title: 'Realizing ₹1,100 of losses may offset eligible gains (about ₹229 less tax)',
       button: { label: 'Open Upstox tax-loss harvesting', href: 'https://account.upstox.com/reports/tax-loss-harvesting' },
     })
     expect(UPSTOX_TLH_URL).toBe('https://account.upstox.com/reports/tax-loss-harvesting')
+    // The trade-off a tax number hides: selling exits a position that may recover.
+    expect(lossPanel(r.strategies.lossHarvest).description).toContain(LOSS_TRADEOFF)
   })
   it('positioning, gain-harvest and A4 wording', () => {
     expect(POSITIONING).toBe("Upstox's tax-loss harvesting handles the 31 March moment. Tax & Cost Insights handles the other 11 months: before every sell.")
-    expect(GAIN_HARVEST_NOTE).toBe('Tax-loss harvesting covers losses. This uses your ₹1.25L tax-free limit on gains.')
+    expect(GAIN_HARVEST_NOTE).toBe('Tax-loss harvesting covers losses. This is the same idea for gains: long-term gains within your ₹1.25L limit are taxed at ₹0.')
     expect(KEEP_NOTE).toBe("You actually keep, after tax and charges. Upstox's Realised P&L shows after-charges only.")
   })
 })

@@ -4,7 +4,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState, t
 import { analyze, type Report } from '@/engine'
 import type { Day, PortfolioInput, Settings, Trade } from '@/engine/types'
 import { personaById, type Persona, DEFAULT_PERSONA_ID } from '@/sample/personas'
-import { buildInput, initialState, NO_EDITS, todayRange, type DemoEdits, type DemoState } from './scenario'
+import { buildInput, initialState, NO_EDITS, todayRange, type DemoEdits, type DemoState, type Intent } from './scenario'
 import { clearSaved, loadSaved, save, type Saved } from './storage'
 import { applyLive, loadLive, NO_LIVE, type DataSource, type LiveData } from './live'
 import { recordedInput, RECORDED_SETTINGS } from '@/upstox/account'
@@ -35,6 +35,9 @@ interface DemoContextValue {
   live: LiveData
   /** true while a live fetch is in flight */
   liveLoading: boolean
+  /** Intent gate (PRODUCT.md §5.1): action-oriented panels only open once a sale is being considered. */
+  intent: Intent
+  setIntent: (i: Intent) => void
   connection: ConnectionState
   edited: boolean
   view: View
@@ -52,7 +55,7 @@ interface DemoContextValue {
 
 const Ctx = createContext<DemoContextValue | null>(null)
 
-const EMPTY: Saved = { personaId: DEFAULT_PERSONA_ID, editsByPersona: {}, todayByPersona: {} }
+const EMPTY: Saved = { personaId: DEFAULT_PERSONA_ID, editsByPersona: {}, todayByPersona: {}, intent: 'exploring' }
 
 /** A persona's state, restoring its saved edits and date (if still inside the allowed range). */
 function restore(id: Persona['id'], saved: Saved): DemoState {
@@ -77,6 +80,7 @@ export function DemoProvider({ children }: { children: ReactNode }) {
   const [liveLoading, setLiveLoading] = useState(false)
   const connection = useUpstoxConnection()
   const [accountSettings, setAccountSettings] = useState(RECORDED_SETTINGS)
+  const intent: Intent = saved.intent ?? 'exploring'
 
   useEffect(() => save(saved), [saved])
 
@@ -124,6 +128,8 @@ export function DemoProvider({ children }: { children: ReactNode }) {
     setDataSource,
     live,
     liveLoading,
+    intent,
+    setIntent: (i) => setAll(({ state: st, saved: sv }) => ({ state: st, saved: { ...sv, intent: i } })),
     connection,
     edited: state.edits.added.length + state.edits.removedIds.length > 0,
     view,

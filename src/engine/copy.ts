@@ -4,30 +4,39 @@ import type { Chip, MfChip, MfFund, MfRedemption, MfReport, Report, Strategies }
 import { formatDay } from './dates'
 import { formatINR } from './money'
 
-/** Lots turning long-term within this many days get the "wait and save" wording (matches the timeline colour split). */
-const SOON_DAYS = 30
-
 const days = (n: number) => `${n} ${n === 1 ? 'day' : 'days'}`
+
+/**
+ * Every figure here is a tax consequence at today's price, never a reason to trade: the product shows
+ * what a sale would cost or save, it does not tell anyone to sell, hold or buy (PRODUCT.md §5.1).
+ */
+export const PRICE_ASSUMPTION = 'Assumes the price stays where it is today. Not investment advice.'
+
+/** The ₹1.25L limit is annual, shared across eligible long-term gains, and measured on gain, not value. */
+export const LTCG_BASIS_NOTE = 'Based on profit, not portfolio value.'
+export const LTCG_BASIS_EXAMPLE =
+  '₹5L invested that is now worth ₹7L is a ₹2L gain, so ₹2L counts towards the limit, not ₹7L. The limit is for the whole financial year and covers all eligible long-term gains together, not one per stock, and it is not a cap on what you can hold.'
 
 export function chipText(c: Chip): string {
   if (c.kind === 'WAIT') {
-    const verb = c.days <= SOON_DAYS ? 'wait and save' : 'save'
-    return `⏳ ${days(c.days)} to long-term · long-term from ${formatDay(c.date, 'd MMM')} · ${verb} ${formatINR(c.saving)}`
+    return `⏳ Becomes long-term in ${days(c.days)} (${formatDay(c.date, 'd MMM')}) · selling after that could mean ${formatINR(c.saving)} less tax at today’s price`
   }
-  if (c.kind === 'TAX_FREE') return `Long-term · ${formatINR(c.amount)} can be booked tax-free`
+  if (c.kind === 'TAX_FREE') return `Long-term · ${formatINR(c.amount)} of gain sits inside this year’s tax-free limit`
   if (c.kind === 'NO_TAX') return `Long-term from ${formatDay(c.date, 'd MMM')} · no tax either way`
-  return `Loss · can cut this year's tax by ${formatINR(c.taxCut)}`
+  return `Loss · realizing it could offset eligible gains (about ${formatINR(c.taxCut)} less tax)`
 }
 
 type Wait = Strategies['waitForLongTerm'][number]
 
-export function waitPanel(w: Wait): { headline: string; today: string; later: string; remind: string } {
+export function waitPanel(w: Wait): { headline: string; today: string; later: string; remind: string; assumption: string } {
   const date = formatDay(w.date)
   return {
-    headline: `Wait ${days(w.days)}, save ${formatINR(w.saving)}`,
+    // Timing, not a recommendation: the holding becomes long-term on a date, and that changes the tax.
+    headline: `Becomes long-term in ${days(w.days)}, on ${date}`,
     today: `Sell today: ${formatINR(w.taxToday)} short-term tax`,
     later: `Sell on or after ${date}: ${w.taxOnDate === 0 ? '₹0 tax' : `${formatINR(w.taxOnDate)} long-term tax`}`,
     remind: `Remind me on ${date}`,
+    assumption: `Estimated tax could be ${formatINR(w.saving)} lower after that date. ${PRICE_ASSUMPTION}`,
   }
 }
 
@@ -48,8 +57,18 @@ export const UPSTOX_TLH_URL = 'https://account.upstox.com/reports/tax-loss-harve
 export const POSITIONING =
   "Upstox's tax-loss harvesting handles the 31 March moment. Tax & Cost Insights handles the other 11 months: before every sell."
 
-/** Gain harvesting is what Upstox's TLH doesn't do. */
-export const GAIN_HARVEST_NOTE = 'Tax-loss harvesting covers losses. This uses your ₹1.25L tax-free limit on gains.'
+/** Gain harvesting is what Upstox's TLH doesn't do. Shown as context; acted on only if a sale is being considered. */
+export const GAIN_HARVEST_NOTE = 'Tax-loss harvesting covers losses. This is the same idea for gains: long-term gains within your ₹1.25L limit are taxed at ₹0.'
+
+// ---- Intent gate (PRODUCT.md §5.1): opportunities are surfaced, never manufactured.
+
+export const INTENT_QUESTION = 'Are you thinking about selling or redeeming?'
+export const INTENT_EXPLORING = 'Just looking'
+export const INTENT_CONSIDERING = 'Considering a sale'
+/** Shown in "just looking" mode, where the screens stay informational. */
+export const INTENT_EXPLORING_NOTE =
+  'Showing what your holdings mean for tax and charges. Switch to “Considering a sale” to see timing and limit-planning options.'
+export const INTENT_CONSIDERING_NOTE = 'Showing timing, the tax-free limit and what a sale would cost. Nothing here is a recommendation to trade.'
 
 /** A4 wording: why "you actually keep" differs from Upstox's Realised P&L. */
 export const KEEP_TITLE = 'You actually keep, after tax and charges'
@@ -63,11 +82,21 @@ export function lossPanel(l: { losses: number; taxCut: number; symbols: string[]
   button: { label: string; href: string }
 } {
   return {
-    title: `${formatINR(l.losses)} of losses could cut this year’s tax by ${formatINR(l.taxCut)}`,
-    description: `Unrealized losses in ${l.symbols.join(', ')} would cancel gains you’ve already booked. Upstox’s tax-loss harvesting lists your loss-making stocks and reminds you to buy back after T+1.`,
+    title: `Realizing ${formatINR(l.losses)} of losses may offset eligible gains (about ${formatINR(l.taxCut)} less tax)`,
+    description: `Unrealized losses in ${l.symbols.join(', ')} would set off against gains you have already booked. ${LOSS_TRADEOFF} Upstox’s tax-loss harvesting lists your loss-making stocks.`,
     button: { label: 'Open Upstox tax-loss harvesting', href: UPSTOX_TLH_URL },
   }
 }
+
+/** The part a tax number hides: selling a loss closes a position that may recover. */
+export const LOSS_TRADEOFF =
+  'The trade-off is real: selling exits a position that could recover later, and the tax set-off is worth less than the holding if it does.'
+
+// ---- Section 156 / the ₹12L rebate, in plain words (PRODUCT.md §7 B3)
+
+/** Consequence first: the user's takeaway, without the phrase "special-rate capital gains". */
+export const S156_PLAIN = 'Stock gains are taxed separately. Your salary may qualify for the ₹12L rebate, but equity gains can still create tax.'
+export const S156_TOOLTIP = 'Some stock gains use special tax rates instead of your normal income-tax slab.'
 
 // ---- Mutual funds (PRODUCT.md §7 M1–M6)
 

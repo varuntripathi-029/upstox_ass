@@ -1,5 +1,6 @@
 // Personas, the scenario layer (edits + today's date) and the sell simulator.
 import { describe, expect, it } from 'vitest'
+import { chipPanel } from './HoldingsView'
 import { analyze, simulateSell } from '@/engine/analyze'
 import { chipText } from '@/engine/copy'
 import { formatINR } from '@/engine/money'
@@ -23,7 +24,7 @@ describe('personas', () => {
     expect([r.summary.grossGains, r.summary.tax, r.summary.charges, r.summary.keep]).toEqual([42_620_00, 3_078_00, 3_420_00, 36_122_00])
     expect(r.limit.left).toBe(1_02_500_00)
     expect(r.charges.smallOrders).toMatchObject({ count: 62, totalOrders: 88 })
-    expect(chipText(r.holdings.find((h) => h.symbol === 'INFY')!.chip!)).toContain('23 days to long-term')
+    expect(chipText(r.holdings.find((h) => h.symbol === 'INFY')!.chip!)).toContain('Becomes long-term in 23 days')
   })
 
   it('Arjun (§10.1): ₹60,000 short-term absorbed by the unused basic exemption → ₹0 tax, ₹3,40,000 of exemption left', () => {
@@ -172,5 +173,26 @@ describe('simulate a sell', () => {
   })
   it('refuses to sell more than is held', () => {
     expect(() => simulateSell(input, s.settings, { symbol: 'INFY', qty: 61, day: '2026-09-18' })).toThrow()
+  })
+})
+
+// The intent gate (PRODUCT.md §5.1): with "just looking", a long-term holding states the fact and
+// offers nothing to act on. Planning surfaces appear only once the viewer says they are considering a sale.
+describe('intent gate', () => {
+  const r = analyze(buildInput(initialState('priya')), initialState('priya').settings)
+  const hdfc = r.holdings.find((h) => h.symbol === 'HDFCBANK')!
+  const itc = r.holdings.find((h) => h.symbol === 'ITC')!
+
+  it('the tax-free chip opens nothing while the viewer is only exploring', () => {
+    expect(chipPanel(hdfc, r.lossesToUse.show, false, false)).toBeNull()
+    expect(chipPanel(hdfc, r.lossesToUse.show, false, true)).toEqual({ kind: 'harvest' })
+  })
+  it('informational chips are unaffected by the gate', () => {
+    expect(chipPanel(itc, r.lossesToUse.show, false, false)).toEqual(chipPanel(itc, r.lossesToUse.show, false, true))
+  })
+  it('the chip itself never tells anyone to act', () => {
+    const text = chipText(hdfc.chip!)
+    expect(text).toBe('Long-term · ₹31,400 of gain sits inside this year’s tax-free limit')
+    expect(text).not.toMatch(/book|sell|wait and save/i)
   })
 })

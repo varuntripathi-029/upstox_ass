@@ -12,6 +12,12 @@ export interface DemoEdits {
   removedIds: string[]
 }
 
+/**
+ * Whether the viewer is actually thinking about selling. "exploring" is the default and keeps every
+ * screen informational; "considering" unlocks timing and limit planning (PRODUCT.md §5.1).
+ */
+export type Intent = 'exploring' | 'considering'
+
 export interface DemoState {
   personaId: Persona['id']
   edits: DemoEdits

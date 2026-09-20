@@ -3,7 +3,7 @@
 import type { ReactNode } from 'react'
 import { toast } from 'sonner'
 import { AlertTriangle, ExternalLink } from 'lucide-react'
-import { elssHeadline, formatDay, GAIN_HARVEST_NOTE, lossPanel, mfRedeemHeadline, MF_DEBT_NOTE, waitPanel, type Report } from '@/engine'
+import { elssHeadline, formatDay, GAIN_HARVEST_NOTE, lossPanel, LOSS_TRADEOFF, LTCG_BASIS_NOTE, mfRedeemHeadline, MF_DEBT_NOTE, PRICE_ASSUMPTION, S156_TOOLTIP, waitPanel, type Report } from '@/engine'
 import { R11_REBATE_MAX, SECTIONS } from '@/engine/rules'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from '@/components/ui/sheet'
@@ -35,7 +35,7 @@ function build(panel: Panel, r: Report): PanelContent {
       return {
         eyebrow: `${h.symbol} · ${l.qty} shares`,
         title: copy.headline,
-        description: `Gain ${inr(l.gain)} at today’s price. Bought ${l.acquired ? formatDay(l.acquired) : '—'}.`,
+        description: `${copy.assumption} Gain ${inr(l.gain)} at today’s price. Bought ${l.acquired ? formatDay(l.acquired) : '—'}.`,
         compare: [
           { label: 'Sell today', value: inr(l.taxToday), note: 'short-term: 20% + cess' },
           { label: `Sell on or after ${formatDay(l.longTermFrom)}`, value: inr(l.taxOnceLongTerm ?? 0), note: 'long-term: 12.5% + cess above the limit', better: true },
@@ -45,32 +45,32 @@ function build(panel: Panel, r: Report): PanelContent {
           <>A sale before that is short-term: 20% + 4% cess on the gain.</>,
           <>From that day, the gain is long-term and tax-free within the {inr(r.limit.limit)} limit ({inr(r.limit.left)} left this year).</>,
         ],
-        warning: 'The price can move while you wait. Waiting only saves tax if you were going to sell anyway.',
+        warning: `This is a tax-timing calculation, not advice to hold: the price can move either way, and the tax difference only matters if you were going to sell. ${PRICE_ASSUMPTION}`,
         primary: { label: copy.remind, toast: `Reminder set for ${formatDay(l.longTermFrom)} (demo: nothing is scheduled).` },
       }
     }
     case 'harvest': {
       const g = s.gainHarvest
-      if (!g.show) return notApplicable('Book gains tax-free', r.limit.left === 0 ? 'The ₹1.25L limit is used up for this year.' : 'There are no long-term gains in your holdings.')
+      if (!g.show) return notApplicable('Using the tax-free limit', r.limit.left === 0 ? 'The ₹1.25L limit is used up for this year.' : 'There are no long-term gains in your holdings.')
       return {
-        eyebrow: 'Book gains tax-free',
-        title: `Book ${inr(g.bookable)} tax-free, keep your shares`,
-        description: `${GAIN_HARVEST_NOTE} You have ${inr(r.limit.left)} of the ${inr(r.limit.limit)} long-term limit left this year. It resets on ${formatDay(r.limit.resetsOn)} and doesn’t carry forward.`,
+        eyebrow: 'Using the tax-free limit',
+        title: `${inr(g.bookable)} of long-term gain would be taxed at ₹0 this year`,
+        description: `${GAIN_HARVEST_NOTE} ${LTCG_BASIS_NOTE} You have ${inr(r.limit.left)} of the ${inr(r.limit.limit)} long-term limit left this year. It resets on ${formatDay(r.limit.resetsOn)} and doesn’t carry forward.`,
         compare: [
           { label: 'Do nothing', value: inr(g.taxSaved), note: 'future tax on these gains (12.5% × 1.04)' },
-          { label: 'Sell today, buy back tomorrow', value: inr(g.netSaving), note: `saved after ≈${inr(g.estimatedCost)} of charges`, better: true },
+          { label: 'Realize the gain and re-enter', value: inr(g.netSaving), note: `difference after ≈${inr(g.estimatedCost)} of charges`, better: true },
         ],
         steps: [
           ...g.byHolding.map((b) => (
             <span key={b.symbol}>
-              Sell <b>{b.qty} {b.symbol}</b> today: books {inr(b.bookable)} of long-term gain at ₹0 tax.
+              Selling <b>{b.qty} {b.symbol}</b> today would realize {inr(b.bookable)} of long-term gain at ₹0 tax.
             </span>
           )),
-          <>Buy them back on the <b>next trading day</b>, never the same day. A same-day sell and buy counts as intraday.</>,
-          <>Your cost goes up, so the tax on a future sale falls by about {inr(g.taxSaved)}.</>,
+          <>If you want to keep the position, re-entering happens on the <b>next trading day</b>: a same-day sell and buy counts as intraday, which is taxed differently.</>,
+          <>Your cost basis rises, so tax on a future sale would be about {inr(g.taxSaved)} lower.</>,
         ],
-        warning: 'The price can move overnight between selling and buying back. Charges are estimated from your own average order cost. The ₹1.25L limit is shared across brokers.',
-        primary: { label: 'Remind me tomorrow to buy back', toast: 'Reminder set for the next trading day (demo: nothing is scheduled).' },
+        warning: `Acting costs money and carries price risk: you pay charges twice and the price can move overnight while you are out of the position. Charges are estimated from your own average order cost, and the ₹1.25L limit is shared across brokers. ${PRICE_ASSUMPTION}`,
+        primary: { label: 'Remind me on the next trading day', toast: 'Reminder set for the next trading day (demo: nothing is scheduled).' },
       }
     }
     case 'loss': {
@@ -79,13 +79,14 @@ function build(panel: Panel, r: Report): PanelContent {
       if (!lh.show) return notApplicable('Losses you can use', 'You need both gains booked this year and holdings at a loss.')
       const copy = lossPanel(lh)
       return {
-        eyebrow: `Losses you can use · ${lh.symbols.join(', ')}`,
+        eyebrow: `Losses that could offset gains · ${lh.symbols.join(', ')}`,
         title: copy.title,
         description: copy.description,
         compare: [
           { label: 'Tax this year now', value: inr(r.summary.tax) },
           { label: 'If these losses are booked', value: inr(Math.max(0, r.summary.tax - lh.taxCut)), better: true },
         ],
+        warning: LOSS_TRADEOFF,
         primary: { label: copy.button.label, href: copy.button.href },
       }
     }
@@ -117,7 +118,7 @@ function build(panel: Panel, r: Report): PanelContent {
       if (b3.show) {
         lines.push(
           <>The {SECTIONS.rebate} rebate (up to {inr(R11_REBATE_MAX)}) removes slab-rate tax when total income is up to ₹12L.</>,
-          <>Short-term (20%) and long-term (12.5%) equity gains are taxed at special rates, and the rebate can’t be used against them. So {inr(b3.stockTax)} is still due.</>,
+          <>Stock gains are taxed separately from salary: short-term at 20% and long-term at 12.5%, and the rebate cannot be used against them, so {inr(b3.stockTax)} is still due. ({S156_TOOLTIP})</>,
         )
       }
       if (r10.show && r10.absorbed > 0) {

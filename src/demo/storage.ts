@@ -1,7 +1,7 @@
 // Per-viewer convenience only: remembers the chosen persona and trade edits in this browser.
 // Every read and write is wrapped: the demo works the same when storage is blocked or empty.
 import { PERSONAS, type Persona } from '@/sample/personas'
-import type { DemoEdits } from './scenario'
+import type { DemoEdits, Intent } from './scenario'
 
 const KEY = 'tax-cost-insights-demo-v1'
 
@@ -9,6 +9,8 @@ export interface Saved {
   personaId: Persona['id']
   editsByPersona: Partial<Record<Persona['id'], DemoEdits>>
   todayByPersona: Partial<Record<Persona['id'], string>>
+  /** Intent gate (PRODUCT.md §5.1). Defaults to "exploring": the product never assumes a sale. */
+  intent?: Intent
 }
 
 export function loadSaved(): Saved | null {
@@ -27,7 +29,8 @@ export function loadSaved(): Saved | null {
       const d = parsed.todayByPersona?.[p.id]
       if (typeof d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d)) today[p.id] = d
     }
-    return { personaId: parsed.personaId, editsByPersona: edits, todayByPersona: today }
+    const intent: Intent = parsed.intent === 'considering' ? 'considering' : 'exploring'
+    return { personaId: parsed.personaId, editsByPersona: edits, todayByPersona: today, intent }
   } catch {
     return null
   }

@@ -31,6 +31,7 @@ function Nav() {
     ['Problem', '#problem'],
     ['How it works', '#how'],
     ['Roadmap', '#roadmap'],
+    ['Metrics', '#metrics'],
   ]
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-white/90 backdrop-blur">
@@ -76,6 +77,11 @@ function Hero() {
           which holdings turn long-term soon, what waiting would save, and what charges cost you.
         </p>
         <p className="mt-3 max-w-2xl text-base font-medium text-upstox-purple-dark">{POSITIONING}</p>
+        <p className="mt-3 max-w-2xl text-base text-muted">
+          Existing brokerage reports answer <b className="text-upstox-black">“what happened?”</b>. This answers{' '}
+          <b className="text-upstox-black">“what does it mean for me before I act?”</b> — and it stops there: it shows the consequence of selling, waiting or doing
+          nothing, and never tells you which to choose.
+        </p>
         <div className="mt-7 flex flex-wrap items-center gap-3">
           <a
             href="/"
@@ -453,11 +459,118 @@ function Roadmap() {
           <div className="rounded-2xl border border-warn-border bg-warn-bg p-5">
             <h3 className="font-semibold text-warn-ink">The honest trade-off</h3>
             <p className="mt-2 text-sm text-warn-ink">
-              Helping users trade in fewer, bigger orders slightly reduces brokerage revenue. The argument is trust and retention: Upstox would be the broker that shows
-              users their real returns.
+              Better decision support may mean <b>fewer</b> transactions, not more: a user who sees the tax on a sale may decide not to make it. That is a real
+              revenue question, and a hypothesis to test rather than a claim to assert — see{' '}
+              <a href="#metrics" className="underline">
+                Metrics &amp; experimentation
+              </a>
+              .
             </p>
           </div>
         </div>
+      </div>
+    </Section>
+  )
+}
+
+// ------------------------------------------------------------------ Metrics & experimentation (PM)
+
+function Metrics() {
+  const secondary = [
+    'Active-user rate and repeat investing/trading',
+    'Feature engagement: insight opens, repeat visits, chips expanded',
+    'Reactivation of dormant users',
+    'Revenue per retained user (not revenue per trade)',
+    'Legitimate transaction conversion: sales the user already intended',
+  ]
+  const trust: [string, string][] = [
+    ['Tax-insight → transaction conversion', 'Watched, never maximised'],
+    ['% of transactions where the user had prior sell/redeem intent', 'Should be high'],
+    ['Support complaints about tax or trading suggestions', 'Should not rise'],
+    ['Comprehension: “Did this insight help you understand your decision?”', 'Should rise'],
+    ['Accuracy: displayed tax vs the year-end tax statement', 'Reconciliation rate'],
+  ]
+  const tradeoffs: [string, string][] = [
+    ['User value', 'Less tax confusion, less manual calculation, a clear view of what a sale or redemption actually costs.'],
+    ['Upstox value', 'Potentially better engagement, retention and trust, and transactions that are better informed.'],
+    ['Potential downside', 'Some users may trade less once they can see the tax and charges. That cost is real and has to be measured, not assumed away.'],
+  ]
+  const box = 'rounded-2xl border border-border bg-surface p-5 shadow-card'
+  return (
+    <Section id="metrics" eyebrow="Metrics & experimentation" title="Decision confidence before a financial action">
+      <div className="grid gap-4 lg:grid-cols-[1.1fr_1fr]">
+        <div className={box}>
+          <h3 className="font-semibold text-upstox-black">The north star</h3>
+          <p className="mt-2 text-sm text-muted">
+            <b className="text-upstox-black">% of users who view an insight and then act with a clear understanding of the tax and cost consequence</b> — not
+            the number of trades generated. Where that cannot be measured directly, the comprehension and intent metrics below stand in for it.
+          </p>
+          <h3 className="mt-5 font-semibold text-upstox-black">The business hypothesis</h3>
+          <p className="mt-2 text-sm text-muted">
+            This feature may <b className="text-upstox-black">reduce</b> some unnecessary transactions, which is a short-term transaction-revenue trade-off. The bet
+            is that it improves trust, retention, engagement, reactivation and the quality of the decisions users make, and that those outweigh it. So the question
+            is not “does this generate more trades?” but:
+          </p>
+          <p className="mt-2 rounded-xl bg-upstox-wash p-3 text-sm font-medium text-upstox-purple-dark">
+            Does the long-term value created by better decision support outweigh any short-term transaction revenue lost from unnecessary trades?
+          </p>
+          <p className="mt-2 text-sm text-muted">
+            No revenue growth is claimed here. This is an empirical product hypothesis that should be validated through experimentation.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div className={box}>
+            <h3 className="font-semibold text-upstox-black">The experiment</h3>
+            <dl className="mt-3 flex flex-col gap-2 text-sm">
+              <div className="flex gap-2">
+                <dt className="w-24 shrink-0 font-medium text-upstox-black">Control</dt>
+                <dd className="text-muted">Today’s Upstox experience.</dd>
+              </div>
+              <div className="flex gap-2">
+                <dt className="w-24 shrink-0 font-medium text-upstox-black">Treatment</dt>
+                <dd className="text-muted">Tax &amp; Cost Insights, with the intent gate on by default.</dd>
+              </div>
+              <div className="flex gap-2">
+                <dt className="w-24 shrink-0 font-medium text-upstox-black">Primary</dt>
+                <dd className="text-muted">30-day and 90-day retention.</dd>
+              </div>
+            </dl>
+            <h4 className="mt-4 text-xs font-semibold tracking-wide text-muted uppercase">Secondary</h4>
+            <ul className="mt-2 flex list-disc flex-col gap-1 pl-4 text-sm text-muted">
+              {secondary.map((m) => (
+                <li key={m}>{m}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="rounded-2xl border border-warn-border bg-warn-bg p-5">
+            <h3 className="font-semibold text-warn-ink">Guardrail: unnecessary-action rate</h3>
+            <p className="mt-2 text-sm text-warn-ink">
+              The share of users who execute a transaction shortly after seeing a tax insight <b>despite showing no prior sell or redeem intent</b>. It says whether
+              the product is serving intent that already existed or manufacturing new trading activity. If it rises, the feature is doing the wrong thing, however
+              good retention looks.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className={`${box} mt-4`}>
+        <h3 className="font-semibold text-upstox-black">Trust and safety metrics</h3>
+        <ul className="mt-3 grid gap-2 text-sm sm:grid-cols-2">
+          {trust.map(([m, why]) => (
+            <li key={m} className="flex flex-col rounded-xl border border-border bg-white p-3">
+              <span className="text-upstox-black">{m}</span>
+              <span className="text-xs text-muted">{why}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-3 text-sm text-muted">The goal is not maximum transaction conversion. It is better-informed decisions and long-term user value.</p>
+      </div>
+      <div className="mt-4 grid gap-4 sm:grid-cols-3">
+        {tradeoffs.map(([h, t]) => (
+          <div key={h} className="rounded-2xl border border-border bg-upstox-wash p-4">
+            <h4 className="text-sm font-semibold text-upstox-black">{h}</h4>
+            <p className="mt-1 text-sm text-muted">{t}</p>
+          </div>
+        ))}
       </div>
     </Section>
   )
@@ -509,6 +622,7 @@ export function CaseStudy() {
         <HowItWorks />
         <Assumptions />
         <Roadmap />
+        <Metrics />
         <section className="border-t border-border bg-white px-4 py-12 text-center">
           <a
             href="/"

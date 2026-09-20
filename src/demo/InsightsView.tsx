@@ -1,13 +1,14 @@
 // Insights view (Funds → Reports → Tax & cost insights). Every figure comes from the engine report.
 import { AlertTriangle, ArrowLeft, ArrowRight, ExternalLink, Info } from 'lucide-react'
 import { Bar, BarChart, CartesianGrid, Cell, LabelList, Pie, PieChart, XAxis, YAxis } from 'recharts'
-import { formatDay, GAIN_HARVEST_NOTE, KEEP_CONTRAST, KEEP_TITLE, MF_CHARGES_NOTE, profitTakeaway, type Report } from '@/engine'
-import { SECTIONS } from '@/engine/rules'
+import { formatDay, GAIN_HARVEST_NOTE, KEEP_CONTRAST, KEEP_TITLE, LTCG_BASIS_EXAMPLE, LTCG_BASIS_NOTE, MF_CHARGES_NOTE, profitTakeaway, S156_TOOLTIP, type Report } from '@/engine'
 import type { Settings } from '@/engine/types'
 import { cn } from '@/lib/utils'
 import { ChartContainer, ChartTooltip, ChartTooltipContent, type ChartConfig } from '@/components/ui/chart'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { useDemo, type Panel } from './DemoContext'
+import { useSellPlanning } from './IntentGate'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip'
 import { SourceTag } from './DataSource'
 
 const sourceLabel = {
@@ -242,6 +243,7 @@ function ProfitDonut() {
 
 function LimitMeter() {
   const { report, openPanel } = useDemo()
+  const planning = useSellPlanning()
   const l = report.limit
   const used = Math.min(100, (l.used / l.limit) * 100)
   const body = (
@@ -269,17 +271,25 @@ function LimitMeter() {
         </span>
         <b className="text-gain-ink">{inr(l.left)} left</b>
       </div>
-      {report.strategies.gainHarvest.show && (
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <p tabIndex={0} className="mt-1 text-xs text-uw-text-2 underline decoration-dotted underline-offset-2">
+            {LTCG_BASIS_NOTE}
+          </p>
+        </TooltipTrigger>
+        <TooltipContent className="max-w-xs">{LTCG_BASIS_EXAMPLE}</TooltipContent>
+      </Tooltip>
+      {planning && report.strategies.gainHarvest.show && (
         <div className="mt-1 text-xs">
           <span className="inline-flex items-center gap-1 font-medium text-uw-purple">
-            Book {inr(report.bookTaxFree.total)} tax-free <ArrowRight className="size-3" />
+            See what {inr(report.bookTaxFree.total)} of tax-free gain would mean <ArrowRight className="size-3" />
           </span>
           <span className="mt-0.5 block text-uw-text-2">{GAIN_HARVEST_NOTE}</span>
         </div>
       )}
     </div>
   )
-  return report.strategies.gainHarvest.show ? (
+  return planning && report.strategies.gainHarvest.show ? (
     <PanelButton onClick={() => openPanel({ kind: 'harvest' })} className="rounded-xl" label="Tax-free limit: open the gain-harvest panel">
       {body}
     </PanelButton>
@@ -357,13 +367,24 @@ function RebateWarning() {
         {s.show ? <AlertTriangle className="mt-0.5 size-5 shrink-0 text-warn-ink" aria-hidden /> : <Info className="mt-0.5 size-5 shrink-0 text-uw-purple" aria-hidden />}
         <div className={cn('text-sm', s.show ? 'text-warn-ink' : 'text-uw-text')}>
           <div className="flex flex-wrap items-center gap-2 font-semibold">
-            {s.show ? `${SECTIONS.rebate} rebate doesn’t cover stock gains` : 'Your unused basic exemption absorbs your gains'}
+            {s.show ? 'Stock gains are taxed separately' : 'Your unused basic exemption absorbs your gains'}
             <Tag kind="NEW" />
           </div>
           {s.show && (
-            <p className="mt-1">
-              Your income ({inr(s.totalIncome)}) is within the ₹12L rebate, but the rebate doesn’t cover <b>{inr(s.stockTax)}</b> of tax on stock gains.
-            </p>
+            <>
+              <p className="mt-1">
+                Your salary may qualify for the ₹12L rebate, but equity gains can still create tax: your income ({inr(s.totalIncome)}) is within the rebate, and{' '}
+                <b>{inr(s.stockTax)}</b> of tax on stock gains is still due.
+              </p>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <span tabIndex={0} className="mt-0.5 inline-block text-xs underline decoration-dotted underline-offset-2">
+                    Why are they separate?
+                  </span>
+                </TooltipTrigger>
+                <TooltipContent className="max-w-xs">{S156_TOOLTIP}</TooltipContent>
+              </Tooltip>
+            </>
           )}
           {r10.show && r10.absorbed > 0 && (
             <p className="mt-1">

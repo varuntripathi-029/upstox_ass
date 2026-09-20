@@ -1,7 +1,7 @@
 // Holdings view (opens first): holdings with chips (C1–C6), the "Turning long-term soon" timeline, and the sell simulator.
 import { useMemo, useState } from 'react'
 import { ArrowRight, Sparkles } from 'lucide-react'
-import { chipText, formatDay, formatINRPaise, simulateSell, type Chip, type HoldingView, type LotView } from '@/engine'
+import { chipText, formatDay, formatINRPaise, LTCG_BASIS_NOTE, simulateSell, type Chip, type HoldingView, type LotView } from '@/engine'
 import { isMfClass } from '@/engine/mf'
 import { cn } from '@/lib/utils'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
@@ -9,18 +9,22 @@ import { MutualFundsView } from './MutualFundsView'
 import { Button } from '@/components/ui/button'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { useDemo, type Panel } from './DemoContext'
+import { IntentGate, useSellPlanning } from './IntentGate'
 import { DemoCard, EstimateNote, inr, PanelButton, pct, signed, Tag } from './ui'
 import { SourceTag } from './DataSource'
 
-/** Which panel a holding's chip opens, if any. */
-export function chipPanel(h: HoldingView, lossUsable: boolean, r10 = false): Panel | null {
+/**
+ * Which panel a holding's chip opens, if any. `planning` is the intent gate (PRODUCT.md §5.1): with
+ * "just looking" the tax-free chip stays a statement of fact and opens nothing to act on.
+ */
+export function chipPanel(h: HoldingView, lossUsable: boolean, r10 = false, planning = true): Panel | null {
   const c = h.chip
   if (!c) return null
   if (c.kind === 'WAIT') {
     const lotIndex = h.lots.findIndex((l) => l.savingByWaiting > 0 && l.daysLeft === c.days)
     return { kind: 'wait', symbol: h.symbol, lotIndex }
   }
-  if (c.kind === 'TAX_FREE') return { kind: 'harvest' }
+  if (c.kind === 'TAX_FREE') return planning ? { kind: 'harvest' } : null
   if (c.kind === 'NO_TAX') return r10 ? { kind: 'r10' } : null
   return lossUsable ? { kind: 'loss' } : null
 }
@@ -33,9 +37,10 @@ const chipStyle: Record<Chip['kind'], string> = {
 }
 
 function HoldingChip({ h }: { h: HoldingView }) {
+  const planning = useSellPlanning()
   const { openPanel, report } = useDemo()
   if (!h.chip) return null
-  const panel = chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0)
+  const panel = chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0, planning)
   const text = h.chip.kind === 'LOSS' && !panel ? 'Loss · no gains booked this year to cut' : chipText(h.chip)
   const cls = cn('inline-flex max-w-full items-center rounded-full border px-2.5 py-1 text-left text-xs leading-snug font-medium', chipStyle[h.chip.kind])
   return panel ? (
@@ -65,9 +70,10 @@ function PnL({ value, cost }: { value: number; cost: number }) {
 
 function HoldingsTable() {
   const { report, openPanel, setView } = useDemo()
+  const planning = useSellPlanning()
   const stocks = report.holdings.filter((h) => !isMfClass(h.assetClass))
   const open = (h: HoldingView) => {
-    const p = chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0)
+    const p = chipPanel(h, report.lossesToUse.show, report.section156.unusedBasicExemption.absorbed > 0, planning)
     if (p) openPanel(p)
   }
   if (stocks.length === 0) {
@@ -157,14 +163,15 @@ function HoldingsTable() {
   )
 }
 
-function lotPanel(l: LotView, index: number, lossUsable: boolean, harvest: boolean, r10: boolean): Panel | null {
+function lotPanel(l: LotView, index: number, lossUsable: boolean, harvest: boolean, r10: boolean, planning = true): Panel | null {
   if (l.gain < 0) return lossUsable ? { kind: 'loss' } : null
-  if (l.longTerm) return harvest ? { kind: 'harvest' } : null
+  if (l.longTerm) return harvest && planning ? { kind: 'harvest' } : null
   if (l.savingByWaiting > 0) return { kind: 'wait', symbol: l.symbol, lotIndex: index }
   return r10 ? { kind: 'r10' } : null
 }
 
 function Timeline() {
+  const planning = useSellPlanning()
   const { report, openPanel } = useDemo()
   const lots = report.timeline.filter((l) => !isMfClass(report.holdings.find((h) => h.symbol === l.symbol)!.assetClass))
   if (lots.length === 0) return null
@@ -177,7 +184,7 @@ function Timeline() {
         {lots.map((l) => {
           const holding = report.holdings.find((h) => h.symbol === l.symbol)!
           const index = holding.lots.indexOf(l)
-          const panel = lotPanel(l, index, report.lossesToUse.show, report.strategies.gainHarvest.show, report.section156.unusedBasicExemption.absorbed > 0)
+          const panel = lotPanel(l, index, report.lossesToUse.show, report.strategies.gainHarvest.show, report.section156.unusedBasicExemption.absorbed > 0, planning)
           const total = (l.daysHeld ?? 0) + l.daysLeft
           const fill = l.longTerm || !total ? 100 : ((l.daysHeld ?? 0) / total) * 100
           const color = l.gain < 0 ? 'bg-uw-text-2/40' : l.longTerm ? 'bg-gain' : l.daysLeft <= 30 ? 'bg-upstox-purple' : 'bg-timeline-later'
@@ -247,6 +254,7 @@ function Legend({ className, label }: { className: string; label: string }) {
 
 function DecisionTiles() {
   const { report, openPanel } = useDemo()
+  const planning = useSellPlanning()
   const tiles = [
     {
       title: 'Tax if you sold everything today',
@@ -256,16 +264,16 @@ function DecisionTiles() {
       kind: 'NEW' as const,
     },
     {
-      title: 'Gains you can book tax-free',
+      title: planning ? 'Gains you could book tax-free' : 'Long-term gains inside your tax-free limit',
       value: inr(report.bookTaxFree.total),
-      note: `${inr(report.limit.left)} of the ${inr(report.limit.limit)} limit left this year. Tax-loss harvesting covers losses; this is for gains.`,
-      panel: report.strategies.gainHarvest.show ? ({ kind: 'harvest' } as Panel) : null,
+      note: `${inr(report.limit.left)} of the ${inr(report.limit.limit)} limit left this year. ${LTCG_BASIS_NOTE}`,
+      panel: planning && report.strategies.gainHarvest.show ? ({ kind: 'harvest' } as Panel) : null,
       kind: 'NEW' as const,
     },
     {
-      title: 'Losses you can use',
+      title: 'Losses that could offset gains',
       value: report.lossesToUse.show ? inr(report.lossesToUse.losses) : '—',
-      note: report.lossesToUse.show ? `Could cut this year’s tax by ${inr(report.lossesToUse.taxCut)}` : 'No unrealized losses to set against gains',
+      note: report.lossesToUse.show ? `Realizing them may offset eligible gains (about ${inr(report.lossesToUse.taxCut)} less tax)` : 'No unrealized losses to set against gains',
       panel: report.lossesToUse.show ? ({ kind: 'loss' } as Panel) : null,
       // Upstox's tax-loss harvesting already covers losses: context here, with a link to it.
       kind: 'CONTEXT' as const,
@@ -473,6 +481,8 @@ export function HoldingsView() {
           </TabsTrigger>
         </TabsList>
         <TabsContent value="stocks" className="flex flex-col gap-4">
+          {/* The gate comes before any chip or tile: intent is established first (PRODUCT.md §5.1). */}
+          <IntentGate />
           <HoldingsTable />
           {stocks.length > 0 && (
             <>
